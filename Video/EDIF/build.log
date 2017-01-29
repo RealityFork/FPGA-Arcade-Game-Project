@@ -1,0 +1,19 @@
+ Track.hcc
+handelc -c -g -D__EDIF__ -DNDEBUG -IC:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Shared\Include -IC:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Hardware\Include -oH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Track.hco -xcH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Track.hcc
+      0 errors, 0 warnings
+ Demo.hcc
+handelc -c -g -D__EDIF__ -DNDEBUG -IC:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Shared\Include -IC:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Hardware\Include -oH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Demo.hco -xcH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc
+      0 errors, 0 warnings
+ Video
+handelc -edif -g -RxH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Video.report.xml -e -S-parfunc -S-parchan -S-parmem -O+high -O+cr -O-rcr -O+cp -O-rcp -O+balance -N+piperam -N+alumap -lutpack -retime -fNoFamily -b -rH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Video.hb -xoH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Demo.hco -xoH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\LCD.hco -xoH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Keyboard.hco -xoH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Sprites.hco -xoH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Car.hco -xoH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Track.hco -xoH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Digit.hco -LC:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Hardware\Lib -xlstdlib.hcl -oH:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Video.edf
+  NAND gates after compilation  : 3399554 (10177 FFs, 839720 memory bits)
+  NAND gates after optimisation : 2862448 (1340 FFs, 806952 memory bits)
+  (W0125) Specified part name 'EP4CE115F29C7' not found in AlteraCycloneIII device family
+  NAND gates after expansion    : 2060625 (1320 FFs, 774184 memory bits)
+  NAND gates after optimisation : 1715320 (1264 FFs, 774184 memory bits)
+  LUTs after mapping            : 19313 (1264 FFs, 774184 memory bits)
+  (W0129) Retiming requires that a valid part be specified
+  (W0152) No valid part specified - generating logic-level based delay estimation
+  Estimation information generated
+      0 errors, 3 warnings
+  Created report file

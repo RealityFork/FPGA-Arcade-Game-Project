@@ -1,0 +1,10 @@
+ Demo.hcc
+handelc -c -g -DSIMULATE -DDEBUG -IC:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Shared\Include -IC:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Hardware\Include -oH:\Advanced\HandleC\Video\Debug\Demo.hco -xcH:\Advanced\HandleC\Video\Demo.hcc
+      0 errors, 0 warnings
+ Video
+handelc -s -g -RxH:\Advanced\HandleC\Video\Debug\Video.report.xml -S+parfunc -S+parchan -S+parmem -O+high -O-cr -O-rcr -O+cp -O-rcp -O+balance -N-piperam -N-alumap -fGeneric -cl"C:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\Common\mingw\bin\g++" -dll -shared -w -I"C:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\DK\sim\include" -O1 "%1" -o"%2" %4 -b -rH:\Advanced\HandleC\Video\Debug\Video.hb -xoH:\Advanced\HandleC\Video\Debug\Demo.hco -xoH:\Advanced\HandleC\Video\Debug\LCD.hco -xoH:\Advanced\HandleC\Video\Debug\ball.hco -xoH:\Advanced\HandleC\Video\Debug\Keyboard.hco -LC:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Hardware\Lib -oH:\Advanced\HandleC\Video\Debug\Video.dll
+  NAND gates after compilation  : 9281 (191 FFs, 2560 memory bits)
+  (W0042) Breaking combinational cycle (if with no else) - may alter timing
+  (W0040) Breaking combinational cycle (while statement) - may alter timing
+      0 errors, 2 warnings
+  Created report file

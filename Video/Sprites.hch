@@ -1,0 +1,9 @@
+rom unsigned CarSprites[][];   // All car sprites
+rom unsigned DigitSprites[];   // Numbers and some letters
+unsigned 8 cTable[1024];       // 256-colour table
+rom unsigned 16 TrackSprite[]; // Run-length coded track
+unsigned C_TRANSPARENT;        // Bright pink = transparent
+/*signed 21 bollards[5][2];     
+signed 21 bollardR;
+signed 21 carR;*/
+ram unsigned 1 Skids[600024];

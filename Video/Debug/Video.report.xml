@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<report name="Hardware Compilation Report">
+<message-type id="1" name="" severity="0" />
+<message-type id="2" name="internal error" severity="5" />
+<message-type id="3" name="fatal error" severity="4" />
+<message-type id="4" name="error" severity="4" />
+<message-type id="5" name="warning" severity="3" />
+<message-type id="6" name="assert" severity="2" />
+<message-type id="7" name="info" severity="1" />
+<message-type id="8" name="advice" severity="1" />
+<section title="Generating &quot;H:/Advanced/HandleC/Video/Debug/Video.dll&quot;" ord="1" >
+<section title="Compiler and Environment" ord="2" >
+<message type="7" code="39" title="DK Design Suite" ord="3" >
+<datum key="built for" value="Windows" >
+</datum>
+<datum key="version" value="5.5_1.7474.19994" >
+</datum>
+</message>
+<message type="7" code="40" title="Environment" ord="4" >
+<datum key="O/S" value="Windows 6.1" >
+</datum>
+</message>
+<message type="7" code="41" title="Report" ord="5" >
+<datum key="Timestamp" value="2013.10.03 19:26:26" >
+</datum>
+</message>
+<message type="7" code="42" title="Parameters" ord="6" >
+<datum key="0" value="" auto="1" >
+<datum key="s" value="" >
+</datum>
+</datum>
+<datum key="1" value="" auto="1" >
+<datum key="g" value="" >
+</datum>
+</datum>
+<datum key="10" value="" auto="1" >
+<datum key="O-rcp" value="" >
+</datum>
+</datum>
+<datum key="11" value="" auto="1" >
+<datum key="O+balance" value="" >
+</datum>
+</datum>
+<datum key="12" value="" auto="1" >
+<datum key="N-piperam" value="" >
+</datum>
+</datum>
+<datum key="13" value="" auto="1" >
+<datum key="N-alumap" value="" >
+</datum>
+</datum>
+<datum key="14" value="" auto="1" >
+<datum key="f" value="Generic" >
+</datum>
+</datum>
+<datum key="15" value="" auto="1" >
+<datum key="cl" value="&quot;C:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\Common\mingw\bin\g++&quot; -dll -shared -w -I&quot;C:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\DK\sim\include&quot; -O1 &quot;%1&quot; -o&quot;%2&quot; %4" >
+</datum>
+</datum>
+<datum key="16" value="" auto="1" >
+<datum key="b" value="" >
+</datum>
+</datum>
+<datum key="17" value="" auto="1" >
+<datum key="r" value="H:\Advanced\HandleC\Video\Debug\Video.hb" >
+</datum>
+</datum>
+<datum key="18" value="" auto="1" >
+<datum key="xo" value="H:\Advanced\HandleC\Video\Debug\Demo.hco" >
+</datum>
+</datum>
+<datum key="19" value="" auto="1" >
+<datum key="xo" value="H:\Advanced\HandleC\Video\Debug\LCD.hco" >
+</datum>
+</datum>
+<datum key="2" value="" auto="1" >
+<datum key="Rx" value="H:\Advanced\HandleC\Video\Debug\Video.report.xml" >
+</datum>
+</datum>
+<datum key="20" value="" auto="1" >
+<datum key="xo" value="H:\Advanced\HandleC\Video\Debug\ball.hco" >
+</datum>
+</datum>
+<datum key="21" value="" auto="1" >
+<datum key="xo" value="H:\Advanced\HandleC\Video\Debug\Keyboard.hco" >
+</datum>
+</datum>
+<datum key="22" value="" auto="1" >
+<datum key="L" value="C:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Hardware\Lib" >
+</datum>
+</datum>
+<datum key="23" value="" auto="1" >
+<datum key="o" value="H:\Advanced\HandleC\Video\Debug\Video.dll" >
+</datum>
+</datum>
+<datum key="3" value="" auto="1" >
+<datum key="S+parfunc" value="" >
+</datum>
+</datum>
+<datum key="4" value="" auto="1" >
+<datum key="S+parchan" value="" >
+</datum>
+</datum>
+<datum key="5" value="" auto="1" >
+<datum key="S+parmem" value="" >
+</datum>
+</datum>
+<datum key="6" value="" auto="1" >
+<datum key="O+high" value="" >
+</datum>
+</datum>
+<datum key="7" value="" auto="1" >
+<datum key="O-cr" value="" >
+</datum>
+</datum>
+<datum key="8" value="" auto="1" >
+<datum key="O-rcr" value="" >
+</datum>
+</datum>
+<datum key="9" value="" auto="1" >
+<datum key="O+cp" value="" >
+</datum>
+</datum>
+</message>
+</section>
+<section title="Files" ord="7" >
+<section title="&quot;Demo&quot;" ord="8" >
+<message type="7" code="5" title="File Type" ord="9" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;LCD&quot;" ord="10" >
+<message type="7" code="5" title="File Type" ord="11" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;ball&quot;" ord="12" >
+<message type="7" code="5" title="File Type" ord="13" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;Keyboard&quot;" ord="14" >
+<message type="7" code="5" title="File Type" ord="15" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+</section>
+<section title="Analysis" ord="16" >
+</section>
+<section title="Transformation" ord="17" >
+</section>
+<section title="Compilation" ord="18" >
+<message type="7" code="2" title="Unused declaration not compiled" ord="19" >
+<datum key="Symbol" value="cTable" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="30" start-column="12" end-line="30" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="7" code="26" title="Area estimation" ord="20" >
+<datum key="Hardware" value="" >
+<datum key="ALUs" value="0" >
+</datum>
+<datum key="Block memory bits" value="0" >
+</datum>
+<datum key="Distributed memory bits" value="2560" >
+</datum>
+<datum key="FFs" value="191" >
+</datum>
+<datum key="LUTs" value="0" >
+</datum>
+<datum key="Logic tiles" value="0" >
+</datum>
+<datum key="NANDs" value="9281" >
+</datum>
+<datum key="Other gates" value="0" >
+</datum>
+</datum>
+<datum key="Stage" value="After compilation" >
+</datum>
+</message>
+<message type="7" code="27" title="BlockCounts" ord="21" >
+<datum key="Blocks" value="" >
+<datum key="Add" value="4" >
+</datum>
+<datum key="And" value="2" >
+</datum>
+<datum key="Compare" value="39" >
+</datum>
+<datum key="Constant" value="322" >
+</datum>
+<datum key="Control" value="203" >
+</datum>
+<datum key="Interface" value="7" >
+</datum>
+<datum key="Memory - ROM" value="1" >
+</datum>
+<datum key="Register" value="23" >
+</datum>
+<datum key="Subtract" value="2" >
+</datum>
+<datum key="[Other]" value="39" >
+</datum>
+</datum>
+<datum key="Stage" value="After compilation" >
+</datum>
+</message>
+</section>
+<message type="5" code="42" title="Breaking combinational cycle (if with no else) - may alter timing" ord="22" >
+<datum key="" value="" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="305" start-column="9" end-line="305" end-column="27" context="macro proc 'kbDriver'" />
+<position file-path="H:\Advanced\HandleC\Video\Keyboard.hcc" start-line="24" start-column="14" end-line="25" end-column="44" />
+</stack>
+</datum>
+</message>
+<message type="7" code="30" title="Broken Cycle" ord="23" >
+<datum key="0" value="Block 175, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="305" start-column="9" end-line="305" end-column="27" context="macro proc 'kbDriver'" />
+<position file-path="H:\Advanced\HandleC\Video\Keyboard.hcc" start-line="11" start-column="5" end-line="26" end-column="6" />
+</stack>
+</datum>
+<datum key="1" value="Block 121, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="305" start-column="9" end-line="305" end-column="27" context="macro proc 'kbDriver'" />
+<position file-path="H:\Advanced\HandleC\Video\Keyboard.hcc" start-line="12" start-column="9" end-line="26" end-column="6" />
+</stack>
+</datum>
+<datum key="2" value="Block 140, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="305" start-column="9" end-line="305" end-column="27" context="macro proc 'kbDriver'" />
+<position file-path="H:\Advanced\HandleC\Video\Keyboard.hcc" start-line="18" start-column="9" end-line="25" end-column="44" />
+</stack>
+</datum>
+<datum key="3" value="Block 148, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="305" start-column="9" end-line="305" end-column="27" context="macro proc 'kbDriver'" />
+<position file-path="H:\Advanced\HandleC\Video\Keyboard.hcc" start-line="20" start-column="14" end-line="25" end-column="44" />
+</stack>
+</datum>
+<datum key="4" value="Block 156, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="305" start-column="9" end-line="305" end-column="27" context="macro proc 'kbDriver'" />
+<position file-path="H:\Advanced\HandleC\Video\Keyboard.hcc" start-line="22" start-column="14" end-line="25" end-column="44" />
+</stack>
+</datum>
+<datum key="5" value="Block 164, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="305" start-column="9" end-line="305" end-column="27" context="macro proc 'kbDriver'" />
+<position file-path="H:\Advanced\HandleC\Video\Keyboard.hcc" start-line="24" start-column="14" end-line="25" end-column="44" />
+</stack>
+</datum>
+<datum key="6" value="Block 168, [Other]" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="305" start-column="9" end-line="305" end-column="27" context="macro proc 'kbDriver'" />
+<position file-path="H:\Advanced\HandleC\Video\Keyboard.hcc" start-line="24" start-column="14" end-line="25" end-column="44" />
+</stack>
+</datum>
+<datum key="7" value="(First block reported again)" auto="1" >
+</datum>
+<datum key="8" value="Block 175, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="305" start-column="9" end-line="305" end-column="27" context="macro proc 'kbDriver'" />
+<position file-path="H:\Advanced\HandleC\Video\Keyboard.hcc" start-line="11" start-column="5" end-line="26" end-column="6" />
+</stack>
+</datum>
+</message>
+<message type="5" code="40" title="Breaking combinational cycle (while statement) - may alter timing" ord="24" >
+<datum key="" value="" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="308" start-column="13" end-line="330" end-column="14" />
+</stack>
+</datum>
+</message>
+<message type="7" code="30" title="Broken Cycle" ord="25" >
+<datum key="0" value="Block 178, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="306" start-column="9" end-line="333" end-column="19" />
+</stack>
+</datum>
+<datum key="1" value="Block 179, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="306" start-column="9" end-line="333" end-column="19" />
+</stack>
+</datum>
+<datum key="2" value="Block 182, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="308" start-column="13" end-line="330" end-column="14" />
+</stack>
+</datum>
+<datum key="3" value="Block 334, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="308" start-column="13" end-line="330" end-column="14" />
+</stack>
+</datum>
+<datum key="4" value="Block 335, [Other]" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="308" start-column="13" end-line="330" end-column="14" />
+</stack>
+</datum>
+<datum key="5" value="(First block reported again)" auto="1" >
+</datum>
+<datum key="6" value="Block 178, Control" auto="1" >
+<stack>
+<position file-path="H:\Advanced\HandleC\Video\Demo.hcc" start-line="306" start-column="9" end-line="333" end-column="19" />
+</stack>
+</datum>
+</message>
+<message type="7" code="4" title="Error status" ord="26" >
+<datum key="Errors" value="0" >
+</datum>
+<datum key="Warnings" value="2" >
+</datum>
+</message>
+</section>
+<message type="7" code="7" title="Internal Timers" ord="27" >
+<datum key="0" value="" auto="1" >
+<datum key="Overall" value="7s (still running), started 1 times" >
+</datum>
+</datum>
+<datum key="1" value="" auto="1" >
+<datum key="Compilation to netlist" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="10" value="" auto="1" >
+<datum key="Braindamaged retime" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="11" value="" auto="1" >
+<datum key="Pre-expansion" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="12" value="" auto="1" >
+<datum key="Expansion" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="13" value="" auto="1" >
+<datum key="Post-expansion" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="14" value="" auto="1" >
+<datum key="Memory pipelining" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="15" value="" auto="1" >
+<datum key="ALU mapper" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="16" value="" auto="1" >
+<datum key="Pin merging" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="17" value="" auto="1" >
+<datum key="Selected backend" value="7s, started 1 times" >
+</datum>
+</datum>
+<datum key="18" value="" auto="1" >
+<datum key="Topsorter and countpaths" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="19" value="" auto="1" >
+<datum key="Topsorter" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="2" value="" auto="1" >
+<datum key="Complete hardware flow" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="20" value="" auto="1" >
+<datum key="Breaking combinational cycles" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="21" value="" auto="1" >
+<datum key="Combinational dependencies" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="22" value="" auto="1" >
+<datum key="Inputs with path to" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="23" value="" auto="1" >
+<datum key="Health checks" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="24" value="" auto="1" >
+<datum key="Upper bound on time unnecessarly spent clearing counts in OptTidy" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="25" value="" auto="1" >
+<datum key="Reading files" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="26" value="" auto="1" >
+<datum key="AST transformations" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="27" value="" auto="1" >
+<datum key="Clock merging" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="28" value="" auto="1" >
+<datum key="Memory flattening" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="29" value="" auto="1" >
+<datum key="Memory balancing" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="3" value="" auto="1" >
+<datum key="Optimiser CSE" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="30" value="" auto="1" >
+<datum key="Always patterns" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="31" value="" auto="1" >
+<datum key="EDIF Populate" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="32" value="" auto="1" >
+<datum key="EDIF Main processing" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="33" value="" auto="1" >
+<datum key="EDIF Remaining tasks" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="34" value="" auto="1" >
+<datum key="Checking pads to FFs" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="35" value="" auto="1" >
+<datum key="MergeRegInputs" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="36" value="" auto="1" >
+<datum key="PostMap" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="37" value="" auto="1" >
+<datum key="BuildInOutWiresToTop" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="38" value="" auto="1" >
+<datum key="SRL Packing" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="39" value="" auto="1" >
+<datum key="Constant propagation" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="4" value="" auto="1" >
+<datum key="Rewriting" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="5" value="" auto="1" >
+<datum key="Conditional rewriting" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="6" value="" auto="1" >
+<datum key="Tidying" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="7" value="" auto="1" >
+<datum key="Technology mapping" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="8" value="" auto="1" >
+<datum key="Retiming" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="9" value="" auto="1" >
+<datum key="Tree balancing" value="0s, started 0 times" >
+</datum>
+</datum>
+</message>
+</report>

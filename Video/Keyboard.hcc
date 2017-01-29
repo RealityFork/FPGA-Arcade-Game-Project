@@ -1,0 +1,42 @@
+#include "Keyboard.hch"
+
+macro proc kbDriver(keyb)
+{
+    unsigned 1 dta, clk;
+    interface KBDriver (unsigned 16 data, unsigned 1 evType)
+        keyboard(unsigned 1 ps2Data = dta, unsigned 1 ps2Clk = clk) with {busformat = "B[I]"};
+    interface bus_in(unsigned 2 data) d_in() with {data = {"G6","H5"}};
+    
+    
+    while (1)
+    par {
+        dta = d_in.data[0]; 
+        clk = d_in.data[1];
+        
+        keyb.key = keyboard.data;
+        keyb.event = keyboard.evType;
+        
+        // This is where the keys are defined for each player.
+        if (keyboard.data == 0xE075)      // Up
+            keyb.up[0] = keyboard.evType;
+        else if (keyboard.data == 0xE072) // Down
+            keyb.down[0] = keyboard.evType;
+        else if (keyboard.data == 0xE06B) // Left
+            keyb.left[0] = keyboard.evType;
+        else if (keyboard.data == 0xE074) // Right
+            keyb.right[0] = keyboard.evType;
+        
+        // P2
+        else if (keyboard.data == 0x001D) // Up
+            keyb.up[1] = keyboard.evType;
+        else if (keyboard.data == 0x001B) // Down
+            keyb.down[1] = keyboard.evType;
+        else if (keyboard.data == 0x001C) // Left
+            keyb.left[1] = keyboard.evType;
+        else if (keyboard.data == 0x0023) // Right
+            keyb.right[1] = keyboard.evType;
+        
+        else if (keyboard.data == 0x005A)
+            keyb.enter = keyboard.evType;
+    }
+}

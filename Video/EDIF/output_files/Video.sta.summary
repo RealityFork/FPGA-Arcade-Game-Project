@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'B3_Demo_hcc_12_pll|auto_generated|pll1|clk[0]'
+Slack : -7.537
+TNS   : -1031.377
+
+Type  : Slow 1200mV 85C Model Hold 'B3_Demo_hcc_12_pll|auto_generated|pll1|clk[0]'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PIN_Y2'
+Slack : 9.819
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'B3_Demo_hcc_12_pll|auto_generated|pll1|clk[0]'
+Slack : 12.194
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'B3_Demo_hcc_12_pll|auto_generated|pll1|clk[0]'
+Slack : -6.074
+TNS   : -492.873
+
+Type  : Slow 1200mV 0C Model Hold 'B3_Demo_hcc_12_pll|auto_generated|pll1|clk[0]'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PIN_Y2'
+Slack : 9.799
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'B3_Demo_hcc_12_pll|auto_generated|pll1|clk[0]'
+Slack : 12.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'B3_Demo_hcc_12_pll|auto_generated|pll1|clk[0]'
+Slack : 2.800
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'B3_Demo_hcc_12_pll|auto_generated|pll1|clk[0]'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PIN_Y2'
+Slack : 9.400
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'B3_Demo_hcc_12_pll|auto_generated|pll1|clk[0]'
+Slack : 12.254
+TNS   : 0.000
+
+------------------------------------------------------------

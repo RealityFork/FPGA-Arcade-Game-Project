@@ -1,0 +1,8 @@
+typedef struct 
+{
+    signal unsigned 10 x, y; // Position on display
+    signal unsigned 1 hblank, vblank; // In horizontal and vertical blanking
+    signal unsigned 8 r, g, b; // Colour to display
+} lcd_data;
+
+macro proc lcd_driver( lcd );

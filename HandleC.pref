@@ -1,0 +1,77 @@
+<!DOCTYPE pref>
+<settings>
+ <workspace activeProject="1" activeConfiguration="EDIF" />
+ <breakpoints/>
+ <workspaceview>
+  <item expanded="true" />
+  <item expanded="false" />
+  <item expanded="true" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+  <item expanded="false" />
+ </workspaceview>
+ <windowlist>
+  <window filepath="Video\Car.hcc" type="SourceEdit" >
+   <size width="767" height="825" maximised="0" />
+   <position x="-2" y="-1" />
+  </window>
+  <window filepath="Video\Car.hch" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="534" y="0" />
+  </window>
+  <window filepath="Video\Demo.hcc" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="3" y="40" />
+  </window>
+  <window filepath="Video\Digit.hcc" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="0" y="0" />
+  </window>
+  <window filepath="Video\Digit.hch" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="534" y="237" />
+  </window>
+  <window filepath="Video\Keyboard.hcc" type="SourceEdit" >
+   <size width="1662" height="863" maximised="1" />
+   <position x="-7" y="-30" />
+  </window>
+  <window filepath="Video\Keyboard.hch" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="0" y="237" />
+  </window>
+  <window filepath="Video\LCD.hcc" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="534" y="0" />
+  </window>
+  <window filepath="Video\LCD.hch" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="534" y="237" />
+  </window>
+  <window filepath="Video\Sprites.hcc" type="SourceEdit" >
+   <size width="886" height="832" maximised="0" />
+   <position x="761" y="-5" />
+  </window>
+  <window filepath="Video\Sprites.hch" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="0" y="237" />
+  </window>
+  <window filepath="Video\Track.hcc" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="32" y="-13" />
+  </window>
+  <window filepath="Video\Track.hch" type="SourceEdit" >
+   <size width="1113" height="588" maximised="0" />
+   <position x="534" y="0" />
+  </window>
+ </windowlist>
+</settings>

@@ -1,0 +1,55 @@
+#include "Digit.hch"
+
+macro proc initialiseD(data) 
+{
+    par {
+        data.x = 17; // Position of lap counter digits
+        if (data.digitNum == 0)
+            data.y = 1;
+        else if (data.digitNum == 1)
+            data.y = 17;
+    }
+     data.countNum = 0;
+}
+        
+
+macro proc displayD( disp, data ) 
+{
+    par 
+    {
+        if (disp.x == data.x) // Start of horizontal bitmap
+            par 
+            { 
+                data.b_h = 1; // We are in the bitmap
+                data.b_x = 0; // Set x index to 0
+            }
+            else if (data.b_h) // We are in the bitmap
+                par 
+                { 
+                    data.b_x++; // Increment index
+                    if (data.b_x == 15) 
+                        data.b_h = 0; // End horizontal position
+                    else delay;
+                }
+            else delay;
+        if (disp.y == data.y) // Start of vertical bitmap position
+            par 
+            { 
+                data.b_v = 1;
+                data.b_y = 15;
+            }
+        else if (data.b_v && disp.x == 0) // Start of a row in bitmap
+            par 
+            { 
+                data.b_y--; // Index for next row
+                if (data.b_y == 0) 
+                    data.b_v = 0; // End vertical bitmap
+                else delay;
+            }
+        else delay;
+        if (data.b_h && data.b_v) // Within ball bitmap?
+            data.pixel = DigitSprites[data.countNum@data.b_y@data.b_x];
+        else
+            data.pixel = C_TRANSPARENT;
+    }
+}

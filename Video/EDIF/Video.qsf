@@ -1,0 +1,184 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+# Date created = 16:25:40  September 25, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Video_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY Video
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:25:40  SEPTEMBER 25, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "DK Design Suite"
+set_global_assignment -name EDA_LMF_FILE "C:/Program Files (x86)/Mentor Graphics/HandelCSynthesis/DK/lmf/dk.lmf" -section_id eda_design_synthesis
+set_global_assignment -name EDA_INPUT_DATA_FORMAT EDIF -section_id eda_design_synthesis
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name ALLOW_POWER_UP_DONT_CARE OFF
+set_global_assignment -name AUTO_PACKED_REGISTERS NORMAL
+set_location_assignment PIN_Y2 -to PIN_Y2
+set_instance_assignment -name IO_STANDARD LVTTL -to PIN_Y2
+set_location_assignment PIN_P27 -to PIN_P27
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_P27
+set_location_assignment PIN_P25 -to PIN_P25
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_P25
+set_instance_assignment -name MAX_DELAY "2 ns" -from CelSynTimeGroup2 -to CelSynTimeGroup1
+set_instance_assignment -name MAX_DELAY "2 ns" -from CelSynTimeGroup2 -to CelSynTimeGroup2
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_H8 -to PIN_H8
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_H8
+set_location_assignment PIN_H10 -to PIN_H10
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_H10
+set_location_assignment PIN_G8 -to PIN_G8
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_G8
+set_location_assignment PIN_G11 -to PIN_G11
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_G11
+set_location_assignment PIN_F8 -to PIN_F8
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_F8
+set_location_assignment PIN_H12 -to PIN_H12
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_H12
+set_location_assignment PIN_C8 -to PIN_C8
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_C8
+set_location_assignment PIN_B8 -to PIN_B8
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_B8
+set_location_assignment PIN_F10 -to PIN_F10
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_F10
+set_location_assignment PIN_C9 -to PIN_C9
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_C9
+set_location_assignment PIN_B10 -to PIN_B10
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_B10
+set_location_assignment PIN_A10 -to PIN_A10
+set_location_assignment PIN_C11 -to PIN_C11
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_C11
+set_location_assignment PIN_B11 -to PIN_B11
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_B11
+set_location_assignment PIN_A11 -to PIN_A11
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_A11
+set_location_assignment PIN_C12 -to PIN_C12
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_C12
+set_location_assignment PIN_D11 -to PIN_D11
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_D11
+set_location_assignment PIN_D12 -to PIN_D12
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_D12
+set_location_assignment PIN_A12 -to PIN_A12
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_A12
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_D10 -to PIN_D10
+set_location_assignment PIN_E11 -to PIN_E11
+set_location_assignment PIN_E12 -to PIN_E12
+set_location_assignment PIN_F12 -to PIN_F12
+set_location_assignment PIN_J12 -to PIN_J12
+set_location_assignment PIN_G10 -to PIN_G10
+set_location_assignment PIN_C10 -to PIN_C10
+set_location_assignment PIN_F11 -to PIN_F11
+set_location_assignment PIN_G13 -to PIN_G13
+set_location_assignment PIN_C13 -to PIN_C13
+set_location_assignment PIN_G6 -to PIN_G6
+set_location_assignment PIN_H5 -to PIN_H5
+set_global_assignment -name SDC_FILE Video.sdc
+set_global_assignment -name VHDL_FILE KBdriver.vhd
+set_global_assignment -name VHDL_FILE vga.vhd
+set_global_assignment -name EDIF_FILE Video.edf
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name IO_STANDARD LVTTL -to PIN_G6
+set_instance_assignment -name IO_STANDARD LVTTL -to PIN_H5
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_E12
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_E11
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_D10
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_F12
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_G10
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_J12
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_A10
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_G13
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_C13
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_F11
+set_instance_assignment -name IO_STANDARD "2.5-V" -to PIN_C10
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B7_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup1
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B10_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B11_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B12_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B13_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B14_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B15_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B16_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B17_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B8_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B9_Demo_hcc_291_DTYPE0IR -section_id CelSynTimeGroup2
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B10_Demo_hcc_291_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B11_Demo_hcc_291_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B12_Demo_hcc_291_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B13_Demo_hcc_291_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B14_Demo_hcc_291_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B15_Demo_hcc_291_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B16_Demo_hcc_291_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B17_Demo_hcc_291_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B8_Demo_hcc_291_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B9_Demo_hcc_291_DTYPE0IR
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B7_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup1
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B10_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B11_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B12_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B13_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B14_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B15_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B16_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B17_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B8_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B9_Demo_hcc_33_DTYPE0IR -section_id CelSynTimeGroup2
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B10_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B11_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B12_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B13_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B14_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B15_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B16_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B17_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B8_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name X_ON_VIOLATION_OPTION OFF -to B9_Demo_hcc_33_DTYPE0IR
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

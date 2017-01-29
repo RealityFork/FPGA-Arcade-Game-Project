@@ -1,0 +1,278 @@
+#include "LCD.hch"
+#include "Car.hch"
+#include "Track.hch"
+#include "Sprites.hch"
+#include "Keyboard.hch"
+#include "Digit.hch"
+
+set family = AlteraCycloneIII; /* Really a Cyclone IV */
+set part = "EP4CE115F29C7";
+
+interface bus_in (unsigned 1 pin) clock_pin () with {data = {"Y2"}};
+interface altpll (unsigned 5 clk with {clockport = 1}) pll (unsigned 2 inclk = 0 @ clock_pin.pin) with {
+    busformat = "B[N:0]",
+    properties = {
+        {"clk0_divide_by", "5"},
+        {"clk0_multiply_by", "4"},
+        {"clk0_duty_cycle", "50"},
+        {"clk0_phase_shift", "0"},
+        {"bandwidth_type", "AUTO"},
+        {"compensate_clock", "CLK0"},
+        {"inclk0_input_frequency", "20000"},
+        {"intended_device_family", "Cyclone IV E"},
+        {"lpm_hint", "CBX_MODULE_PREFIX=pll"},
+        {"lpm_type", "altpll"},
+        {"operation_mode", "NORMAL"},
+        {"pll_type", "AUTO"},
+        {"port_clk0", "PORT_USED"},
+        {"width_clock", "5"}},
+    bind = 1};
+set clock = internal pll.clk[0];
+
+    
+lcd_data lcd;
+Car blueCar, redCar, blueScore, redScore;
+Digit blueDigit, redDigit, chooseLaps, lapChoice;
+Track track;
+KBData keyboard;
+    
+void main(void)
+{
+    unsigned 2 gameState; // Start screen, playing, finished.
+    unsigned 1 gmToggle;  // Used to wait for keyUps
+    unsigned 1 skidPix;   // Current skid pixel
+
+    gameState = 0;
+    gmToggle = 0;
+    
+    blueCar.playerNum = 0;
+    redCar.playerNum  = 1;
+    blueScore.playerNum = 0;
+    redScore.playerNum = 1;
+    blueDigit.digitNum = 0;
+    redDigit.digitNum = 1;
+
+
+    initialiseC(blueCar); 
+    initialiseC(redCar); 
+    initialiseC(blueScore); 
+    initialiseC(redScore);
+    initialiseD(blueDigit);
+    initialiseD(redDigit);
+    initialiseD(chooseLaps);
+    initialiseD(lapChoice);
+    initialiseT(track);
+    //clearSkids();
+    
+    
+    // Set positions of various elements
+    blueScore.x = 256;
+    blueScore.y = 256;
+    redScore.x = 256;
+    redScore.y = 4352;
+    
+    chooseLaps.x = 384;
+    chooseLaps.y = 292;
+    chooseLaps.countNum = 10; // "L:"
+    lapChoice.x = 400;
+    lapChoice.y = 292;
+    lapChoice.countNum = 3; // Default 3 laps
+    
+    
+    par 
+    {   // Never return
+        lcd_driver(lcd);
+        kbDriver(keyboard);
+        do
+        {
+            while(lcd.vblank)
+            par { // Get pixel from all screen elements
+                displayC(lcd, blueCar);
+                displayC(lcd, redCar);
+                displayC(lcd, blueScore);
+                displayC(lcd, redScore);
+                displayD(lcd, blueDigit);
+                displayD(lcd, redDigit);
+                displayD(lcd, lapChoice);
+                displayD(lcd, chooseLaps);
+                displayT(lcd, track);
+                skidPix = Skids[lcd.y@lcd.x];
+                
+                if (gameState == 0) // Show start screen
+                par{
+                    if (chooseLaps.pixel != C_TRANSPARENT)
+                    par{
+                        lcd.r = cTable[((00@chooseLaps.pixel)<<2)];
+                        lcd.g = cTable[((00@chooseLaps.pixel)<<2)+1];
+                        lcd.b = cTable[((00@chooseLaps.pixel)<<2)+2];
+                    }
+                    else if (lapChoice.pixel != C_TRANSPARENT)
+                    par{
+                        lcd.r = cTable[((00@lapChoice.pixel)<<2)];
+                        lcd.g = cTable[((00@lapChoice.pixel)<<2)+1];
+                        lcd.b = cTable[((00@lapChoice.pixel)<<2)+2];
+                    }
+                    else if (lcd.x > 300 && lcd.x < 500 && lcd.y > 200 && lcd.y < 400)
+                    par { // White square
+                        lcd.r = 255;
+                        lcd.g = 255;
+                        lcd.b = 255;
+                    }
+                }
+                else if (blueCar.pixel != C_TRANSPARENT)
+                par {
+                    lcd.r = cTable[((00@blueCar.pixel)<<2)];
+                    lcd.g = cTable[((00@blueCar.pixel)<<2)+1];
+                    lcd.b = cTable[((00@blueCar.pixel)<<2)+2]; // Display car
+                }
+                else if (redCar.pixel != C_TRANSPARENT)
+                par {
+                    lcd.r = cTable[((00@redCar.pixel)<<2)];
+                    lcd.g = cTable[((00@redCar.pixel)<<2)+1];
+                    lcd.b = cTable[((00@redCar.pixel)<<2)+2]; // Display car
+                }
+                else if (blueScore.pixel != C_TRANSPARENT)
+                par {
+                    lcd.r = cTable[((00@blueScore.pixel)<<2)];
+                    lcd.g = cTable[((00@blueScore.pixel)<<2)+1];
+                    lcd.b = cTable[((00@blueScore.pixel)<<2)+2]; // Display score car
+                }
+                else if (redScore.pixel != C_TRANSPARENT)
+                par {
+                    lcd.r = cTable[((00@redScore.pixel)<<2)];
+                    lcd.g = cTable[((00@redScore.pixel)<<2)+1];
+                    lcd.b = cTable[((00@redScore.pixel)<<2)+2]; // Display score car
+                }
+                else if (blueDigit.pixel != C_TRANSPARENT)
+                par {
+                    lcd.r = cTable[((00@blueDigit.pixel)<<2)];
+                    lcd.g = cTable[((00@blueDigit.pixel)<<2)+1];
+                    lcd.b = cTable[((00@blueDigit.pixel)<<2)+2]; // Display score
+                }
+                else if (redDigit.pixel != C_TRANSPARENT)
+                par {
+                    lcd.r = cTable[((00@redDigit.pixel)<<2)];
+                    lcd.g = cTable[((00@redDigit.pixel)<<2)+1];
+                    lcd.b = cTable[((00@redDigit.pixel)<<2)+2]; // Display score
+                }
+                else if (skidPix)
+                par {
+                    if (track.pixel == 164) // Track
+                    par {
+                        lcd.r = 64;
+                        lcd.g = 64;
+                        lcd.b = 64;
+                    }
+                    else if (track.pixel == 2) // Grass
+                    par {
+                        lcd.r = 128;
+                        lcd.g = 64;
+                        lcd.b = 64;
+                    }
+                    else if (track.pixel == 7) // Curb
+                    par {
+                        lcd.r = 128;
+                        lcd.g = 128;
+                        lcd.b = 128;
+                    }
+                    else // No skid pixel
+                    par {
+                        lcd.r = cTable[((00@track.pixel)<<2)]; 
+                        lcd.g = cTable[((00@track.pixel)<<2)+1];
+                        lcd.b = cTable[((00@track.pixel)<<2)+2];
+                    }
+                }
+                else // Draw track
+                par {
+                    lcd.r = cTable[((00@track.pixel)<<2)];
+                    lcd.g = cTable[((00@track.pixel)<<2)+1];
+                    lcd.b = cTable[((00@track.pixel)<<2)+2];
+                }
+                
+                // More slidey on grass, slow right down on bollards
+                // Set collision flags
+                if (blueCar.pixel != C_TRANSPARENT && (track.pixel == 4 || track.pixel == 192 || track.pixel == 252))
+                    blueCar.bollard = 1;
+                else if (blueCar.pixel == 0 && track.pixel == 2)
+                    blueCar.grass = 1;
+                
+                if (redCar.pixel != C_TRANSPARENT && (track.pixel == 4 || track.pixel == 192 || track.pixel == 252))
+                    redCar.bollard = 1;
+                else if (redCar.pixel == 0 && track.pixel == 2)
+                    redCar.grass = 1;
+            }
+            // Update positions and velocities
+            updateC(blueCar, keyboard, blueDigit, gameState);
+            updateC(redCar, keyboard, redDigit, gameState);
+            
+            // Handle skids
+            collisions(blueCar);
+            collisions(redCar);
+            
+            // Reset track to 0,0
+            initialiseT(track);
+            
+            // Reset collision flags
+            blueCar.bollard = 0;
+            blueCar.grass = 0;
+            redCar.bollard = 0;
+            redCar.grass = 0;
+            
+            // Rotate score cars
+            blueScore.angle++;
+            if(blueScore.angle == 96)
+                blueScore.angle = 0;
+            redScore.angle--;
+            if(redScore.angle > 95)
+                redScore.angle = 95;
+            
+            // Choosing laps amount
+            if (gameState == 0)
+            {
+                if (keyboard.enter)
+                    gameState++;
+                else if (!gmToggle && keyboard.up[0])
+                {
+                    gmToggle = 1;
+                    lapChoice.countNum++;
+                    if (lapChoice.countNum == 10) lapChoice.countNum = 9;
+                }
+                else if (!gmToggle && keyboard.down[0])
+                {
+                    gmToggle = 1;
+                    lapChoice.countNum--;
+                    if (lapChoice.countNum == 0) lapChoice.countNum = 1;
+                }
+                else if (gmToggle && !keyboard.up[0] && !keyboard.down[0])
+                    gmToggle = 0;
+                
+            }
+            else if (gameState == 1) // Wait for end of race
+            {
+                if (blueDigit.countNum > lapChoice.countNum || redDigit.countNum > lapChoice.countNum)
+                {
+                    if (blueDigit.countNum > lapChoice.countNum)
+                        blueDigit.countNum = lapChoice.countNum;
+                    if (redDigit.countNum > lapChoice.countNum)
+                        redDigit.countNum = lapChoice.countNum;
+                    gameState++;
+                }
+            }
+            else if (gameState == 2) // Wait till cars stop.
+            {
+                if (blueCar.vx == 0 && blueCar.vy == 0 && redCar.vx == 0 && redCar.vy == 0)
+                {
+                    // Restart the game
+                    gameState = 0;
+                    initialiseC(blueCar); 
+                    initialiseC(redCar); 
+                    initialiseD(blueDigit);
+                    initialiseD(redDigit);
+                    clearSkids();
+                }
+            }
+            
+            while(!lcd.vblank) delay;
+        } while(1);
+    }
+}

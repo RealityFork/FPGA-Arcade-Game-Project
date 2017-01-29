@@ -1,0 +1,2464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<report name="Hardware Compilation Report">
+<message-type id="1" name="" severity="0" />
+<message-type id="2" name="internal error" severity="5" />
+<message-type id="3" name="fatal error" severity="4" />
+<message-type id="4" name="error" severity="4" />
+<message-type id="5" name="warning" severity="3" />
+<message-type id="6" name="assert" severity="2" />
+<message-type id="7" name="info" severity="1" />
+<message-type id="8" name="advice" severity="1" />
+<section title="Generating &quot;H:/Advanced%20Computer%20Systems%20Engineering/DonB/HandleC/Video/EDIF/Video.edf&quot;" ord="1" >
+<section title="Compiler and Environment" ord="2" >
+<message type="7" code="39" title="DK Design Suite" ord="3" >
+<datum key="built for" value="Windows" >
+</datum>
+<datum key="version" value="5.5_1.7474.19994" >
+</datum>
+</message>
+<message type="7" code="40" title="Environment" ord="4" >
+<datum key="O/S" value="Windows 6.1" >
+</datum>
+</message>
+<message type="7" code="41" title="Report" ord="5" >
+<datum key="Timestamp" value="2013.10.14 05:44:40" >
+</datum>
+</message>
+<message type="7" code="42" title="Parameters" ord="6" >
+<datum key="0" value="" auto="1" >
+<datum key="edif" value="" >
+</datum>
+</datum>
+<datum key="1" value="" auto="1" >
+<datum key="g" value="" >
+</datum>
+</datum>
+<datum key="10" value="" auto="1" >
+<datum key="O+cp" value="" >
+</datum>
+</datum>
+<datum key="11" value="" auto="1" >
+<datum key="O-rcp" value="" >
+</datum>
+</datum>
+<datum key="12" value="" auto="1" >
+<datum key="O+balance" value="" >
+</datum>
+</datum>
+<datum key="13" value="" auto="1" >
+<datum key="N+piperam" value="" >
+</datum>
+</datum>
+<datum key="14" value="" auto="1" >
+<datum key="N+alumap" value="" >
+</datum>
+</datum>
+<datum key="15" value="" auto="1" >
+<datum key="lutpack" value="" >
+</datum>
+</datum>
+<datum key="16" value="" auto="1" >
+<datum key="retime" value="" >
+</datum>
+</datum>
+<datum key="17" value="" auto="1" >
+<datum key="f" value="NoFamily" >
+</datum>
+</datum>
+<datum key="18" value="" auto="1" >
+<datum key="b" value="" >
+</datum>
+</datum>
+<datum key="19" value="" auto="1" >
+<datum key="r" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Video.hb" >
+</datum>
+</datum>
+<datum key="2" value="" auto="1" >
+<datum key="Rx" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Video.report.xml" >
+</datum>
+</datum>
+<datum key="20" value="" auto="1" >
+<datum key="xo" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Demo.hco" >
+</datum>
+</datum>
+<datum key="21" value="" auto="1" >
+<datum key="xo" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\LCD.hco" >
+</datum>
+</datum>
+<datum key="22" value="" auto="1" >
+<datum key="xo" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Keyboard.hco" >
+</datum>
+</datum>
+<datum key="23" value="" auto="1" >
+<datum key="xo" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Sprites.hco" >
+</datum>
+</datum>
+<datum key="24" value="" auto="1" >
+<datum key="xo" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Car.hco" >
+</datum>
+</datum>
+<datum key="25" value="" auto="1" >
+<datum key="xo" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Track.hco" >
+</datum>
+</datum>
+<datum key="26" value="" auto="1" >
+<datum key="xo" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Digit.hco" >
+</datum>
+</datum>
+<datum key="27" value="" auto="1" >
+<datum key="L" value="C:\Program Files (x86)\Mentor Graphics\HandelCSynthesis\PDK\Hardware\Lib" >
+</datum>
+</datum>
+<datum key="28" value="" auto="1" >
+<datum key="xl" value="stdlib.hcl" >
+</datum>
+</datum>
+<datum key="29" value="" auto="1" >
+<datum key="o" value="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\EDIF\Video.edf" >
+</datum>
+</datum>
+<datum key="3" value="" auto="1" >
+<datum key="e" value="" >
+</datum>
+</datum>
+<datum key="4" value="" auto="1" >
+<datum key="S-parfunc" value="" >
+</datum>
+</datum>
+<datum key="5" value="" auto="1" >
+<datum key="S-parchan" value="" >
+</datum>
+</datum>
+<datum key="6" value="" auto="1" >
+<datum key="S-parmem" value="" >
+</datum>
+</datum>
+<datum key="7" value="" auto="1" >
+<datum key="O+high" value="" >
+</datum>
+</datum>
+<datum key="8" value="" auto="1" >
+<datum key="O+cr" value="" >
+</datum>
+</datum>
+<datum key="9" value="" auto="1" >
+<datum key="O-rcr" value="" >
+</datum>
+</datum>
+</message>
+</section>
+<section title="Files" ord="7" >
+<section title="&quot;Demo&quot;" ord="8" >
+<message type="7" code="5" title="File Type" ord="9" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;LCD&quot;" ord="10" >
+<message type="7" code="5" title="File Type" ord="11" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;Keyboard&quot;" ord="12" >
+<message type="7" code="5" title="File Type" ord="13" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;Sprites&quot;" ord="14" >
+<message type="7" code="5" title="File Type" ord="15" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;Car&quot;" ord="16" >
+<message type="7" code="5" title="File Type" ord="17" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;Track&quot;" ord="18" >
+<message type="7" code="5" title="File Type" ord="19" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;Digit&quot;" ord="20" >
+<message type="7" code="5" title="File Type" ord="21" >
+<datum key="Object (HCO)" value="" >
+</datum>
+</message>
+</section>
+<section title="&quot;stdlib&quot;" ord="22" >
+<message type="7" code="5" title="File Type" ord="23" >
+<datum key="Library (HCL)" value="" >
+</datum>
+</message>
+</section>
+</section>
+<section title="Analysis" ord="24" >
+</section>
+<section title="Compilation" ord="25" >
+<message type="7" code="2" title="Unused declaration not compiled" ord="26" >
+<datum key="Symbol" value="CarSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="1" start-column="14" end-line="1" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="27" >
+<datum key="Symbol" value="DigitSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="2" start-column="14" end-line="2" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="28" >
+<datum key="Symbol" value="cTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="3" start-column="12" end-line="3" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="29" >
+<datum key="Symbol" value="TrackSprite" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="4" start-column="17" end-line="4" end-column="30" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="30" >
+<datum key="Symbol" value="C_TRANSPARENT" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="5" start-column="10" end-line="5" end-column="23" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="31" >
+<datum key="Symbol" value="Skids" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="9" start-column="16" end-line="9" end-column="29" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="32" >
+<datum key="Symbol" value="sinTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hch" start-line="22" start-column="12" end-line="22" end-column="22" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="33" >
+<datum key="Symbol" value="cosTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hch" start-line="23" start-column="12" end-line="23" end-column="22" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="34" >
+<datum key="Symbol" value="vvx" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hch" start-line="24" start-column="13" end-line="24" end-column="16" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="35" >
+<datum key="Symbol" value="vvy" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hch" start-line="24" start-column="18" end-line="24" end-column="21" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="36" >
+<datum key="Symbol" value="CarSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="1" start-column="14" end-line="1" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="37" >
+<datum key="Symbol" value="DigitSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="2" start-column="14" end-line="2" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="38" >
+<datum key="Symbol" value="cTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="3" start-column="12" end-line="3" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="39" >
+<datum key="Symbol" value="TrackSprite" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="4" start-column="17" end-line="4" end-column="30" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="40" >
+<datum key="Symbol" value="C_TRANSPARENT" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="5" start-column="10" end-line="5" end-column="23" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="41" >
+<datum key="Symbol" value="Skids" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="9" start-column="16" end-line="9" end-column="29" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="42" >
+<datum key="Symbol" value="laps" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Track.hch" start-line="12" start-column="12" end-line="12" end-column="16" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="43" >
+<datum key="Symbol" value="CarSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="1" start-column="14" end-line="1" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="44" >
+<datum key="Symbol" value="DigitSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="2" start-column="14" end-line="2" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="45" >
+<datum key="Symbol" value="cTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="3" start-column="12" end-line="3" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="46" >
+<datum key="Symbol" value="TrackSprite" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="4" start-column="17" end-line="4" end-column="30" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="47" >
+<datum key="Symbol" value="C_TRANSPARENT" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="5" start-column="10" end-line="5" end-column="23" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="48" >
+<datum key="Symbol" value="Skids" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="9" start-column="16" end-line="9" end-column="29" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="49" >
+<datum key="Symbol" value="CarSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="1" start-column="14" end-line="1" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="50" >
+<datum key="Symbol" value="DigitSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="2" start-column="14" end-line="2" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="51" >
+<datum key="Symbol" value="cTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="3" start-column="12" end-line="3" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="52" >
+<datum key="Symbol" value="TrackSprite" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="4" start-column="17" end-line="4" end-column="30" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="53" >
+<datum key="Symbol" value="C_TRANSPARENT" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="5" start-column="10" end-line="5" end-column="23" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="54" >
+<datum key="Symbol" value="Skids" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="9" start-column="16" end-line="9" end-column="29" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="55" >
+<datum key="Symbol" value="CarSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="1" start-column="14" end-line="1" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="56" >
+<datum key="Symbol" value="DigitSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="2" start-column="14" end-line="2" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="57" >
+<datum key="Symbol" value="cTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="3" start-column="12" end-line="3" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="58" >
+<datum key="Symbol" value="TrackSprite" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="4" start-column="17" end-line="4" end-column="30" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="59" >
+<datum key="Symbol" value="C_TRANSPARENT" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="5" start-column="10" end-line="5" end-column="23" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="60" >
+<datum key="Symbol" value="Skids" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="9" start-column="16" end-line="9" end-column="29" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="61" >
+<datum key="Symbol" value="sinTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hch" start-line="22" start-column="12" end-line="22" end-column="22" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="62" >
+<datum key="Symbol" value="cosTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hch" start-line="23" start-column="12" end-line="23" end-column="22" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="63" >
+<datum key="Symbol" value="vvx" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hch" start-line="24" start-column="13" end-line="24" end-column="16" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="64" >
+<datum key="Symbol" value="vvy" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hch" start-line="24" start-column="18" end-line="24" end-column="21" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="65" >
+<datum key="Symbol" value="vvx" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="6" start-column="13" end-line="6" end-column="16" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="66" >
+<datum key="Symbol" value="vvy" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="6" start-column="18" end-line="6" end-column="21" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="67" >
+<datum key="Symbol" value="CarSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="1" start-column="14" end-line="1" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="68" >
+<datum key="Symbol" value="DigitSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="2" start-column="14" end-line="2" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="69" >
+<datum key="Symbol" value="cTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="3" start-column="12" end-line="3" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="70" >
+<datum key="Symbol" value="TrackSprite" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="4" start-column="17" end-line="4" end-column="30" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="71" >
+<datum key="Symbol" value="C_TRANSPARENT" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="5" start-column="10" end-line="5" end-column="23" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="72" >
+<datum key="Symbol" value="Skids" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="9" start-column="16" end-line="9" end-column="29" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="73" >
+<datum key="Symbol" value="laps" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Track.hch" start-line="12" start-column="12" end-line="12" end-column="16" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="74" >
+<datum key="Symbol" value="CarSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="1" start-column="14" end-line="1" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="75" >
+<datum key="Symbol" value="DigitSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="2" start-column="14" end-line="2" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="76" >
+<datum key="Symbol" value="cTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="3" start-column="12" end-line="3" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="77" >
+<datum key="Symbol" value="TrackSprite" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="4" start-column="17" end-line="4" end-column="30" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="78" >
+<datum key="Symbol" value="C_TRANSPARENT" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="5" start-column="10" end-line="5" end-column="23" />
+</stack>
+</datum>
+</message>
+<message type="7" code="2" title="Unused declaration not compiled" ord="79" >
+<datum key="Symbol" value="Skids" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hch" start-line="9" start-column="16" end-line="9" end-column="29" />
+</stack>
+</datum>
+</message>
+<message type="7" code="26" title="Area estimation" ord="80" >
+<datum key="Hardware" value="" >
+<datum key="ALUs" value="0" >
+</datum>
+<datum key="Block memory bits" value="839720" >
+</datum>
+<datum key="Distributed memory bits" value="0" >
+</datum>
+<datum key="FFs" value="10177" >
+</datum>
+<datum key="LUTs" value="0" >
+</datum>
+<datum key="Logic tiles" value="0" >
+</datum>
+<datum key="NANDs" value="3399554" >
+</datum>
+<datum key="Other gates" value="0" >
+</datum>
+</datum>
+<datum key="Stage" value="After compilation" >
+</datum>
+</message>
+<message type="7" code="27" title="BlockCounts" ord="81" >
+<datum key="Blocks" value="" >
+<datum key="Add" value="160" >
+</datum>
+<datum key="And" value="64" >
+</datum>
+<datum key="Compare" value="787" >
+</datum>
+<datum key="Constant" value="19052" >
+</datum>
+<datum key="Control" value="2069" >
+</datum>
+<datum key="Divide" value="12" >
+</datum>
+<datum key="Interface" value="7" >
+</datum>
+<datum key="Memory - RAM" value="1" >
+</datum>
+<datum key="Memory - ROM" value="8" >
+</datum>
+<datum key="Multiply" value="32" >
+</datum>
+<datum key="Or" value="15" >
+</datum>
+<datum key="Register" value="1203" >
+</datum>
+<datum key="Shift Left" value="30" >
+</datum>
+<datum key="Shift Right" value="108" >
+</datum>
+<datum key="Subtract" value="23" >
+</datum>
+<datum key="[Other]" value="464" >
+</datum>
+</datum>
+<datum key="Stage" value="After compilation" >
+</datum>
+</message>
+</section>
+<section title="Synthesis" ord="82" >
+<section title="Optimisation" ord="123" >
+<section title="High Level" ord="124" >
+<message type="7" code="38" title="Optimisation information" ord="125" >
+<datum key="0" value="" auto="1" >
+<datum key="CP" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="1" value="" auto="1" >
+<datum key="Tidy" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="10" value="" auto="1" >
+<datum key="CSE" value="Saved 19 block(s)" >
+</datum>
+</datum>
+<datum key="11" value="" auto="1" >
+<datum key="Tidy" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="12" value="" auto="1" >
+<datum key="Current block count" value="1713" >
+</datum>
+</datum>
+<datum key="13" value="" auto="1" >
+<datum key="Rewrite" value="No change, 1713 blocks before, 1713 blocks after, 1 iterations,  rewrote 0 ( 1713 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="14" value="" auto="1" >
+<datum key="Tree balancing" value="No change" >
+</datum>
+</datum>
+<datum key="15" value="" auto="1" >
+<datum key="Tree balancing" value="No change" >
+</datum>
+</datum>
+<datum key="16" value="" auto="1" >
+<datum key="Option and passes" value="OptHigh, 0passes" >
+</datum>
+</datum>
+<datum key="2" value="" auto="1" >
+<datum key="Current block count" value="3789" >
+</datum>
+</datum>
+<datum key="3" value="" auto="1" >
+<datum key="Rewrite" value="No change, 3789 blocks before, 3789 blocks after, 1 iterations,  rewrote 0 ( 3789 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="4" value="" auto="1" >
+<datum key="Current block count" value="3789" >
+</datum>
+</datum>
+<datum key="5" value="" auto="1" >
+<datum key="CSE" value="Saved 2099 block(s)" >
+</datum>
+</datum>
+<datum key="6" value="" auto="1" >
+<datum key="Tidy" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="7" value="" auto="1" >
+<datum key="Current block count" value="1690" >
+</datum>
+</datum>
+<datum key="8" value="" auto="1" >
+<datum key="Rewrite" value="Success, 1690 blocks before, 1732 blocks after, 1 iterations,  rewrote 36 ( 1821 attempts, 1% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="9" value="" auto="1" >
+<datum key="Current block count" value="1732" >
+</datum>
+</datum>
+</message>
+<message type="7" code="26" title="Area estimation" ord="126" >
+<datum key="Hardware" value="" >
+<datum key="ALUs" value="0" >
+</datum>
+<datum key="Block memory bits" value="806952" >
+</datum>
+<datum key="Distributed memory bits" value="0" >
+</datum>
+<datum key="FFs" value="1340" >
+</datum>
+<datum key="LUTs" value="0" >
+</datum>
+<datum key="Logic tiles" value="0" >
+</datum>
+<datum key="NANDs" value="2862448" >
+</datum>
+<datum key="Other gates" value="0" >
+</datum>
+</datum>
+<datum key="Stage" value="After optimisation" >
+</datum>
+</message>
+<message type="7" code="27" title="BlockCounts" ord="127" >
+<datum key="Blocks" value="" >
+<datum key="Add" value="87" >
+</datum>
+<datum key="And" value="329" >
+</datum>
+<datum key="Compare" value="158" >
+</datum>
+<datum key="Constant" value="120" >
+</datum>
+<datum key="Control" value="352" >
+</datum>
+<datum key="Interface" value="7" >
+</datum>
+<datum key="Memory - RAM" value="1" >
+</datum>
+<datum key="Memory - ROM" value="7" >
+</datum>
+<datum key="Multiply" value="24" >
+</datum>
+<datum key="Negate" value="8" >
+</datum>
+<datum key="Not" value="128" >
+</datum>
+<datum key="Or" value="41" >
+</datum>
+<datum key="Register" value="124" >
+</datum>
+<datum key="Subtract" value="25" >
+</datum>
+<datum key="[Other]" value="302" >
+</datum>
+</datum>
+<datum key="Stage" value="After optimisation" >
+</datum>
+</message>
+</section>
+<section title="Low Level" ord="143" >
+<message type="7" code="38" title="Optimisation information" ord="144" >
+<datum key="0" value="" auto="1" >
+<datum key="Current block count" value="215727" >
+</datum>
+</datum>
+<datum key="1" value="" auto="1" >
+<datum key="CP" value="Saved 20938 block(s)" >
+</datum>
+</datum>
+<datum key="10" value="" auto="1" >
+<datum key="Tidy" value="Saved 84 block(s)" >
+</datum>
+</datum>
+<datum key="100" value="" auto="1" >
+<datum key="CR" value="Saved 19 block(s)" >
+</datum>
+</datum>
+<datum key="101" value="" auto="1" >
+<datum key="Tidy" value="Saved 3 block(s)" >
+</datum>
+</datum>
+<datum key="102" value="" auto="1" >
+<datum key="Current block count" value="31177" >
+</datum>
+</datum>
+<datum key="103" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31177 blocks before, 31177 blocks after, 1 iterations,  rewrote 5 ( 31182 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="104" value="" auto="1" >
+<datum key="Current block count" value="31177" >
+</datum>
+</datum>
+<datum key="105" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="106" value="" auto="1" >
+<datum key="Current block count" value="31177" >
+</datum>
+</datum>
+<datum key="107" value="" auto="1" >
+<datum key="CR" value="Saved 28 block(s)" >
+</datum>
+</datum>
+<datum key="108" value="" auto="1" >
+<datum key="Tidy" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="109" value="" auto="1" >
+<datum key="Current block count" value="31149" >
+</datum>
+</datum>
+<datum key="11" value="" auto="1" >
+<datum key="Current block count" value="33350" >
+</datum>
+</datum>
+<datum key="110" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31149 blocks before, 31149 blocks after, 1 iterations,  rewrote 6 ( 31155 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="111" value="" auto="1" >
+<datum key="Current block count" value="31149" >
+</datum>
+</datum>
+<datum key="112" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="113" value="" auto="1" >
+<datum key="Current block count" value="31149" >
+</datum>
+</datum>
+<datum key="114" value="" auto="1" >
+<datum key="CR" value="Saved 12 block(s)" >
+</datum>
+</datum>
+<datum key="115" value="" auto="1" >
+<datum key="Tidy" value="Saved 3 block(s)" >
+</datum>
+</datum>
+<datum key="116" value="" auto="1" >
+<datum key="Current block count" value="31134" >
+</datum>
+</datum>
+<datum key="117" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31134 blocks before, 31134 blocks after, 1 iterations,  rewrote 4 ( 31138 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="118" value="" auto="1" >
+<datum key="Current block count" value="31134" >
+</datum>
+</datum>
+<datum key="119" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="12" value="" auto="1" >
+<datum key="Rewrite" value="Success, 33350 blocks before, 33267 blocks after, 1 iterations,  rewrote 192 ( 33663 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="120" value="" auto="1" >
+<datum key="Current block count" value="31134" >
+</datum>
+</datum>
+<datum key="121" value="" auto="1" >
+<datum key="CR" value="Saved 10 block(s)" >
+</datum>
+</datum>
+<datum key="122" value="" auto="1" >
+<datum key="Tidy" value="Saved 3 block(s)" >
+</datum>
+</datum>
+<datum key="123" value="" auto="1" >
+<datum key="Current block count" value="31121" >
+</datum>
+</datum>
+<datum key="124" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31121 blocks before, 31121 blocks after, 1 iterations,  rewrote 3 ( 31124 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="125" value="" auto="1" >
+<datum key="Current block count" value="31121" >
+</datum>
+</datum>
+<datum key="126" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="127" value="" auto="1" >
+<datum key="Current block count" value="31121" >
+</datum>
+</datum>
+<datum key="128" value="" auto="1" >
+<datum key="CR" value="Saved 7 block(s)" >
+</datum>
+</datum>
+<datum key="129" value="" auto="1" >
+<datum key="Tidy" value="Saved 5 block(s)" >
+</datum>
+</datum>
+<datum key="13" value="" auto="1" >
+<datum key="Current block count" value="33267" >
+</datum>
+</datum>
+<datum key="130" value="" auto="1" >
+<datum key="Current block count" value="31109" >
+</datum>
+</datum>
+<datum key="131" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31109 blocks before, 31109 blocks after, 1 iterations,  rewrote 2 ( 31111 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="132" value="" auto="1" >
+<datum key="Current block count" value="31109" >
+</datum>
+</datum>
+<datum key="133" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="134" value="" auto="1" >
+<datum key="Current block count" value="31109" >
+</datum>
+</datum>
+<datum key="135" value="" auto="1" >
+<datum key="CR" value="Saved 6 block(s)" >
+</datum>
+</datum>
+<datum key="136" value="" auto="1" >
+<datum key="Tidy" value="Saved 7 block(s)" >
+</datum>
+</datum>
+<datum key="137" value="" auto="1" >
+<datum key="Current block count" value="31096" >
+</datum>
+</datum>
+<datum key="138" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31096 blocks before, 31096 blocks after, 1 iterations,  rewrote 3 ( 31099 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="139" value="" auto="1" >
+<datum key="Current block count" value="31096" >
+</datum>
+</datum>
+<datum key="14" value="" auto="1" >
+<datum key="CSE" value="Saved 1 block(s)" >
+</datum>
+</datum>
+<datum key="140" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="141" value="" auto="1" >
+<datum key="Current block count" value="31096" >
+</datum>
+</datum>
+<datum key="142" value="" auto="1" >
+<datum key="CR" value="Saved 11 block(s)" >
+</datum>
+</datum>
+<datum key="143" value="" auto="1" >
+<datum key="Tidy" value="Saved 3 block(s)" >
+</datum>
+</datum>
+<datum key="144" value="" auto="1" >
+<datum key="Current block count" value="31082" >
+</datum>
+</datum>
+<datum key="145" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31082 blocks before, 31082 blocks after, 1 iterations,  rewrote 4 ( 31086 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="146" value="" auto="1" >
+<datum key="Current block count" value="31082" >
+</datum>
+</datum>
+<datum key="147" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="148" value="" auto="1" >
+<datum key="Current block count" value="31082" >
+</datum>
+</datum>
+<datum key="149" value="" auto="1" >
+<datum key="CR" value="Saved 10 block(s)" >
+</datum>
+</datum>
+<datum key="15" value="" auto="1" >
+<datum key="Current block count" value="33266" >
+</datum>
+</datum>
+<datum key="150" value="" auto="1" >
+<datum key="Tidy" value="Saved 3 block(s)" >
+</datum>
+</datum>
+<datum key="151" value="" auto="1" >
+<datum key="Current block count" value="31069" >
+</datum>
+</datum>
+<datum key="152" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31069 blocks before, 31069 blocks after, 1 iterations,  rewrote 2 ( 31071 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="153" value="" auto="1" >
+<datum key="Current block count" value="31069" >
+</datum>
+</datum>
+<datum key="154" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="155" value="" auto="1" >
+<datum key="Current block count" value="31069" >
+</datum>
+</datum>
+<datum key="156" value="" auto="1" >
+<datum key="CR" value="Saved 8 block(s)" >
+</datum>
+</datum>
+<datum key="157" value="" auto="1" >
+<datum key="Tidy" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="158" value="" auto="1" >
+<datum key="Current block count" value="31061" >
+</datum>
+</datum>
+<datum key="159" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31061 blocks before, 31061 blocks after, 1 iterations,  rewrote 1 ( 31062 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="16" value="" auto="1" >
+<datum key="CR" value="Saved 854 block(s)" >
+</datum>
+</datum>
+<datum key="160" value="" auto="1" >
+<datum key="Current block count" value="31061" >
+</datum>
+</datum>
+<datum key="161" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="162" value="" auto="1" >
+<datum key="Current block count" value="31061" >
+</datum>
+</datum>
+<datum key="163" value="" auto="1" >
+<datum key="CR" value="Saved 8 block(s)" >
+</datum>
+</datum>
+<datum key="164" value="" auto="1" >
+<datum key="Tidy" value="Saved 4 block(s)" >
+</datum>
+</datum>
+<datum key="165" value="" auto="1" >
+<datum key="Current block count" value="31049" >
+</datum>
+</datum>
+<datum key="166" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31049 blocks before, 31049 blocks after, 1 iterations,  rewrote 2 ( 31051 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="167" value="" auto="1" >
+<datum key="Current block count" value="31049" >
+</datum>
+</datum>
+<datum key="168" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="169" value="" auto="1" >
+<datum key="Current block count" value="31049" >
+</datum>
+</datum>
+<datum key="17" value="" auto="1" >
+<datum key="Tidy" value="Saved 6 block(s)" >
+</datum>
+</datum>
+<datum key="170" value="" auto="1" >
+<datum key="CR" value="Saved 7 block(s)" >
+</datum>
+</datum>
+<datum key="171" value="" auto="1" >
+<datum key="Tidy" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="172" value="" auto="1" >
+<datum key="Current block count" value="31042" >
+</datum>
+</datum>
+<datum key="173" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31042 blocks before, 31042 blocks after, 1 iterations,  rewrote 1 ( 31043 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="174" value="" auto="1" >
+<datum key="Current block count" value="31042" >
+</datum>
+</datum>
+<datum key="175" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="176" value="" auto="1" >
+<datum key="Current block count" value="31042" >
+</datum>
+</datum>
+<datum key="177" value="" auto="1" >
+<datum key="CR" value="Saved 7 block(s)" >
+</datum>
+</datum>
+<datum key="178" value="" auto="1" >
+<datum key="Tidy" value="Saved 4 block(s)" >
+</datum>
+</datum>
+<datum key="179" value="" auto="1" >
+<datum key="Current block count" value="31031" >
+</datum>
+</datum>
+<datum key="18" value="" auto="1" >
+<datum key="Current block count" value="32406" >
+</datum>
+</datum>
+<datum key="180" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31031 blocks before, 31031 blocks after, 1 iterations,  rewrote 2 ( 31033 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="181" value="" auto="1" >
+<datum key="Current block count" value="31031" >
+</datum>
+</datum>
+<datum key="182" value="" auto="1" >
+<datum key="CSE" value="Saved 1 block(s)" >
+</datum>
+</datum>
+<datum key="183" value="" auto="1" >
+<datum key="Current block count" value="31030" >
+</datum>
+</datum>
+<datum key="184" value="" auto="1" >
+<datum key="CR" value="Saved 6 block(s)" >
+</datum>
+</datum>
+<datum key="185" value="" auto="1" >
+<datum key="Tidy" value="Saved 1 block(s)" >
+</datum>
+</datum>
+<datum key="186" value="" auto="1" >
+<datum key="Current block count" value="31023" >
+</datum>
+</datum>
+<datum key="187" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31023 blocks before, 31023 blocks after, 1 iterations,  rewrote 2 ( 31025 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="188" value="" auto="1" >
+<datum key="Current block count" value="31023" >
+</datum>
+</datum>
+<datum key="189" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="19" value="" auto="1" >
+<datum key="Rewrite" value="Success, 32406 blocks before, 32406 blocks after, 1 iterations,  rewrote 141 ( 32547 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="190" value="" auto="1" >
+<datum key="Current block count" value="31023" >
+</datum>
+</datum>
+<datum key="191" value="" auto="1" >
+<datum key="CR" value="Saved 5 block(s)" >
+</datum>
+</datum>
+<datum key="192" value="" auto="1" >
+<datum key="Tidy" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="193" value="" auto="1" >
+<datum key="Current block count" value="31018" >
+</datum>
+</datum>
+<datum key="194" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31018 blocks before, 31018 blocks after, 1 iterations,  rewrote 1 ( 31019 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="195" value="" auto="1" >
+<datum key="Current block count" value="31018" >
+</datum>
+</datum>
+<datum key="196" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="197" value="" auto="1" >
+<datum key="Current block count" value="31018" >
+</datum>
+</datum>
+<datum key="198" value="" auto="1" >
+<datum key="CR" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="199" value="" auto="1" >
+<datum key="Tidy" value="Saved 1 block(s)" >
+</datum>
+</datum>
+<datum key="2" value="" auto="1" >
+<datum key="Tidy" value="Saved 69530 block(s)" >
+</datum>
+</datum>
+<datum key="20" value="" auto="1" >
+<datum key="Current block count" value="32406" >
+</datum>
+</datum>
+<datum key="200" value="" auto="1" >
+<datum key="Current block count" value="31017" >
+</datum>
+</datum>
+<datum key="201" value="" auto="1" >
+<datum key="Rewrite" value="No change, 31017 blocks before, 31017 blocks after, 1 iterations,  rewrote 0 ( 31017 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="202" value="" auto="1" >
+<datum key="Current block count" value="31017" >
+</datum>
+</datum>
+<datum key="203" value="" auto="1" >
+<datum key="Option and passes" value="OptLow, 29passes" >
+</datum>
+</datum>
+<datum key="21" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="22" value="" auto="1" >
+<datum key="Current block count" value="32406" >
+</datum>
+</datum>
+<datum key="23" value="" auto="1" >
+<datum key="CR" value="Saved 605 block(s)" >
+</datum>
+</datum>
+<datum key="24" value="" auto="1" >
+<datum key="Tidy" value="Saved 9 block(s)" >
+</datum>
+</datum>
+<datum key="25" value="" auto="1" >
+<datum key="Current block count" value="31792" >
+</datum>
+</datum>
+<datum key="26" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31792 blocks before, 31774 blocks after, 1 iterations,  rewrote 137 ( 31929 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="27" value="" auto="1" >
+<datum key="Current block count" value="31774" >
+</datum>
+</datum>
+<datum key="28" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="29" value="" auto="1" >
+<datum key="Current block count" value="31774" >
+</datum>
+</datum>
+<datum key="3" value="" auto="1" >
+<datum key="Current block count" value="125259" >
+</datum>
+</datum>
+<datum key="30" value="" auto="1" >
+<datum key="CR" value="Saved 196 block(s)" >
+</datum>
+</datum>
+<datum key="31" value="" auto="1" >
+<datum key="Tidy" value="Saved 1 block(s)" >
+</datum>
+</datum>
+<datum key="32" value="" auto="1" >
+<datum key="Current block count" value="31577" >
+</datum>
+</datum>
+<datum key="33" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31577 blocks before, 31577 blocks after, 1 iterations,  rewrote 49 ( 31626 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="34" value="" auto="1" >
+<datum key="Current block count" value="31577" >
+</datum>
+</datum>
+<datum key="35" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="36" value="" auto="1" >
+<datum key="Current block count" value="31577" >
+</datum>
+</datum>
+<datum key="37" value="" auto="1" >
+<datum key="CR" value="Saved 65 block(s)" >
+</datum>
+</datum>
+<datum key="38" value="" auto="1" >
+<datum key="Tidy" value="Saved 2 block(s)" >
+</datum>
+</datum>
+<datum key="39" value="" auto="1" >
+<datum key="Current block count" value="31510" >
+</datum>
+</datum>
+<datum key="4" value="" auto="1" >
+<datum key="Rewrite" value="Success, 125259 blocks before, 61583 blocks after, 2 iterations,  rewrote 38086 ( 415657 attempts, 9% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="40" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31510 blocks before, 31510 blocks after, 1 iterations,  rewrote 26 ( 31536 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="41" value="" auto="1" >
+<datum key="Current block count" value="31510" >
+</datum>
+</datum>
+<datum key="42" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="43" value="" auto="1" >
+<datum key="Current block count" value="31510" >
+</datum>
+</datum>
+<datum key="44" value="" auto="1" >
+<datum key="CR" value="Saved 20 block(s)" >
+</datum>
+</datum>
+<datum key="45" value="" auto="1" >
+<datum key="Tidy" value="Saved 2 block(s)" >
+</datum>
+</datum>
+<datum key="46" value="" auto="1" >
+<datum key="Current block count" value="31488" >
+</datum>
+</datum>
+<datum key="47" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31488 blocks before, 31488 blocks after, 1 iterations,  rewrote 4 ( 31492 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="48" value="" auto="1" >
+<datum key="Current block count" value="31488" >
+</datum>
+</datum>
+<datum key="49" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="5" value="" auto="1" >
+<datum key="Tidy" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="50" value="" auto="1" >
+<datum key="Current block count" value="31488" >
+</datum>
+</datum>
+<datum key="51" value="" auto="1" >
+<datum key="CR" value="Saved 25 block(s)" >
+</datum>
+</datum>
+<datum key="52" value="" auto="1" >
+<datum key="Tidy" value="Saved 7 block(s)" >
+</datum>
+</datum>
+<datum key="53" value="" auto="1" >
+<datum key="Current block count" value="31456" >
+</datum>
+</datum>
+<datum key="54" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31456 blocks before, 31456 blocks after, 1 iterations,  rewrote 11 ( 31467 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="55" value="" auto="1" >
+<datum key="Current block count" value="31456" >
+</datum>
+</datum>
+<datum key="56" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="57" value="" auto="1" >
+<datum key="Current block count" value="31456" >
+</datum>
+</datum>
+<datum key="58" value="" auto="1" >
+<datum key="CR" value="Saved 38 block(s)" >
+</datum>
+</datum>
+<datum key="59" value="" auto="1" >
+<datum key="Tidy" value="Saved 6 block(s)" >
+</datum>
+</datum>
+<datum key="6" value="" auto="1" >
+<datum key="Current block count" value="61583" >
+</datum>
+</datum>
+<datum key="60" value="" auto="1" >
+<datum key="Current block count" value="31412" >
+</datum>
+</datum>
+<datum key="61" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31412 blocks before, 31412 blocks after, 1 iterations,  rewrote 10 ( 31422 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="62" value="" auto="1" >
+<datum key="Current block count" value="31412" >
+</datum>
+</datum>
+<datum key="63" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="64" value="" auto="1" >
+<datum key="Current block count" value="31412" >
+</datum>
+</datum>
+<datum key="65" value="" auto="1" >
+<datum key="CR" value="Saved 38 block(s)" >
+</datum>
+</datum>
+<datum key="66" value="" auto="1" >
+<datum key="Tidy" value="Saved 9 block(s)" >
+</datum>
+</datum>
+<datum key="67" value="" auto="1" >
+<datum key="Current block count" value="31365" >
+</datum>
+</datum>
+<datum key="68" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31365 blocks before, 31365 blocks after, 1 iterations,  rewrote 10 ( 31375 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="69" value="" auto="1" >
+<datum key="Current block count" value="31365" >
+</datum>
+</datum>
+<datum key="7" value="" auto="1" >
+<datum key="CSE" value="Saved 27784 block(s)" >
+</datum>
+</datum>
+<datum key="70" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="71" value="" auto="1" >
+<datum key="Current block count" value="31365" >
+</datum>
+</datum>
+<datum key="72" value="" auto="1" >
+<datum key="CR" value="Saved 53 block(s)" >
+</datum>
+</datum>
+<datum key="73" value="" auto="1" >
+<datum key="Tidy" value="Saved 5 block(s)" >
+</datum>
+</datum>
+<datum key="74" value="" auto="1" >
+<datum key="Current block count" value="31307" >
+</datum>
+</datum>
+<datum key="75" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31307 blocks before, 31307 blocks after, 1 iterations,  rewrote 11 ( 31318 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="76" value="" auto="1" >
+<datum key="Current block count" value="31307" >
+</datum>
+</datum>
+<datum key="77" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="78" value="" auto="1" >
+<datum key="Current block count" value="31307" >
+</datum>
+</datum>
+<datum key="79" value="" auto="1" >
+<datum key="CR" value="Saved 47 block(s)" >
+</datum>
+</datum>
+<datum key="8" value="" auto="1" >
+<datum key="Current block count" value="33799" >
+</datum>
+</datum>
+<datum key="80" value="" auto="1" >
+<datum key="Tidy" value="Saved 1 block(s)" >
+</datum>
+</datum>
+<datum key="81" value="" auto="1" >
+<datum key="Current block count" value="31259" >
+</datum>
+</datum>
+<datum key="82" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31259 blocks before, 31259 blocks after, 1 iterations,  rewrote 13 ( 31272 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="83" value="" auto="1" >
+<datum key="Current block count" value="31259" >
+</datum>
+</datum>
+<datum key="84" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="85" value="" auto="1" >
+<datum key="Current block count" value="31259" >
+</datum>
+</datum>
+<datum key="86" value="" auto="1" >
+<datum key="CR" value="Saved 24 block(s)" >
+</datum>
+</datum>
+<datum key="87" value="" auto="1" >
+<datum key="Tidy" value="Saved 5 block(s)" >
+</datum>
+</datum>
+<datum key="88" value="" auto="1" >
+<datum key="Current block count" value="31230" >
+</datum>
+</datum>
+<datum key="89" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31230 blocks before, 31230 blocks after, 1 iterations,  rewrote 7 ( 31237 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="9" value="" auto="1" >
+<datum key="CR" value="Saved 365 block(s)" >
+</datum>
+</datum>
+<datum key="90" value="" auto="1" >
+<datum key="Current block count" value="31230" >
+</datum>
+</datum>
+<datum key="91" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="92" value="" auto="1" >
+<datum key="Current block count" value="31230" >
+</datum>
+</datum>
+<datum key="93" value="" auto="1" >
+<datum key="CR" value="Saved 26 block(s)" >
+</datum>
+</datum>
+<datum key="94" value="" auto="1" >
+<datum key="Tidy" value="Saved 5 block(s)" >
+</datum>
+</datum>
+<datum key="95" value="" auto="1" >
+<datum key="Current block count" value="31199" >
+</datum>
+</datum>
+<datum key="96" value="" auto="1" >
+<datum key="Rewrite" value="Success, 31199 blocks before, 31199 blocks after, 1 iterations,  rewrote 8 ( 31207 attempts, 0% successful), largest number of consecutive bad passes was 0" >
+</datum>
+</datum>
+<datum key="97" value="" auto="1" >
+<datum key="Current block count" value="31199" >
+</datum>
+</datum>
+<datum key="98" value="" auto="1" >
+<datum key="CSE" value="Saved 0 block(s)" >
+</datum>
+</datum>
+<datum key="99" value="" auto="1" >
+<datum key="Current block count" value="31199" >
+</datum>
+</datum>
+</message>
+<message type="7" code="11" title="Constant 1 FF removed" ord="145" >
+<datum key="Name" value="lapChoice_x[bit_4]" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Digit.hch" start-line="5" start-column="17" end-line="5" end-column="18" />
+</stack>
+</datum>
+</message>
+<message type="7" code="26" title="Area estimation" ord="146" >
+<datum key="Hardware" value="" >
+<datum key="ALUs" value="0" >
+</datum>
+<datum key="Block memory bits" value="774184" >
+</datum>
+<datum key="Distributed memory bits" value="0" >
+</datum>
+<datum key="FFs" value="1264" >
+</datum>
+<datum key="LUTs" value="0" >
+</datum>
+<datum key="Logic tiles" value="0" >
+</datum>
+<datum key="NANDs" value="1715320" >
+</datum>
+<datum key="Other gates" value="0" >
+</datum>
+</datum>
+<datum key="Stage" value="After optimisation" >
+</datum>
+</message>
+<message type="7" code="27" title="BlockCounts" ord="147" >
+<datum key="Blocks" value="" >
+<datum key="And" value="7811" >
+</datum>
+<datum key="Carry Buffer" value="642" >
+</datum>
+<datum key="Carry Sum" value="6507" >
+</datum>
+<datum key="Flip-flop" value="1264" >
+</datum>
+<datum key="Input Buffer" value="3" >
+</datum>
+<datum key="Input Pad" value="3" >
+</datum>
+<datum key="Interface" value="3" >
+</datum>
+<datum key="LUT" value="12873" >
+</datum>
+<datum key="Memory - RAM" value="1" >
+</datum>
+<datum key="Memory - ROM" value="6" >
+</datum>
+<datum key="Not" value="625" >
+</datum>
+<datum key="Or" value="1142" >
+</datum>
+<datum key="Output Buffer" value="29" >
+</datum>
+<datum key="Output Pad" value="29" >
+</datum>
+<datum key="Xor" value="78" >
+</datum>
+<datum key="[Other]" value="1" >
+</datum>
+</datum>
+<datum key="Stage" value="After optimisation" >
+</datum>
+</message>
+</section>
+</section>
+<section title="Memory Pipelining" ord="129" >
+<message type="8" code="1" title="Memory with synchronous read capability not pipelined - consider rewriting accesses" ord="130" >
+<datum key="Symbol" value="cosTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="5" start-column="12" end-line="5" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="8" code="1" title="Memory with synchronous read capability not pipelined - consider rewriting accesses" ord="131" >
+<datum key="Symbol" value="sinTable" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="4" start-column="12" end-line="4" end-column="24" />
+</stack>
+</datum>
+</message>
+<message type="8" code="1" title="Memory with synchronous read capability not pipelined - consider rewriting accesses" ord="132" >
+<datum key="Symbol" value="CarSprites_3" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hcc" start-line="14" start-column="16" end-line="14" end-column="35" />
+</stack>
+</datum>
+</message>
+<message type="8" code="1" title="Memory with synchronous read capability not pipelined - consider rewriting accesses" ord="133" >
+<datum key="Symbol" value="CarSprites_1" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hcc" start-line="14" start-column="16" end-line="14" end-column="35" />
+</stack>
+</datum>
+</message>
+<message type="8" code="1" title="Memory with synchronous read capability not pipelined - consider rewriting accesses" ord="134" >
+<datum key="Symbol" value="CarSprites_0" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hcc" start-line="14" start-column="16" end-line="14" end-column="35" />
+</stack>
+</datum>
+</message>
+<message type="8" code="1" title="Memory with synchronous read capability not pipelined - consider rewriting accesses" ord="135" >
+<datum key="Symbol" value="TrackSprite" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hcc" start-line="813" start-column="17" end-line="813" end-column="34" />
+</stack>
+</datum>
+</message>
+<message type="8" code="1" title="Memory with synchronous read capability not pipelined - consider rewriting accesses" ord="136" >
+<datum key="Symbol" value="DigitSprites" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hcc" start-line="594" start-column="16" end-line="594" end-column="34" />
+</stack>
+</datum>
+</message>
+<message type="8" code="1" title="Memory with synchronous read capability not pipelined - consider rewriting accesses" ord="137" >
+<datum key="Symbol" value="Skids" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Sprites.hcc" start-line="12" start-column="16" end-line="12" end-column="29" />
+</stack>
+</datum>
+</message>
+</section>
+<section title="Expansion" ord="138" >
+<message type="7" code="26" title="Area estimation" ord="139" >
+<datum key="Hardware" value="" >
+<datum key="ALUs" value="0" >
+</datum>
+<datum key="Block memory bits" value="774184" >
+</datum>
+<datum key="Distributed memory bits" value="0" >
+</datum>
+<datum key="FFs" value="1320" >
+</datum>
+<datum key="LUTs" value="0" >
+</datum>
+<datum key="Logic tiles" value="0" >
+</datum>
+<datum key="NANDs" value="2060625" >
+</datum>
+<datum key="Other gates" value="0" >
+</datum>
+</datum>
+<datum key="Stage" value="After expansion" >
+</datum>
+</message>
+<message type="7" code="27" title="BlockCounts" ord="140" >
+<datum key="Blocks" value="" >
+<datum key="And" value="40756" >
+</datum>
+<datum key="Carry Buffer" value="1011" >
+</datum>
+<datum key="Carry Sum" value="7505" >
+</datum>
+<datum key="Flip-flop" value="1320" >
+</datum>
+<datum key="Input Buffer" value="3" >
+</datum>
+<datum key="Input Pad" value="3" >
+</datum>
+<datum key="Interface" value="3" >
+</datum>
+<datum key="LUT" value="16025" >
+</datum>
+<datum key="Memory - RAM" value="1" >
+</datum>
+<datum key="Memory - ROM" value="6" >
+</datum>
+<datum key="Not" value="138977" >
+</datum>
+<datum key="Or" value="2165" >
+</datum>
+<datum key="Output Buffer" value="29" >
+</datum>
+<datum key="Output Pad" value="29" >
+</datum>
+<datum key="Xor" value="756" >
+</datum>
+<datum key="[Other]" value="6147" >
+</datum>
+</datum>
+<datum key="Stage" value="After expansion" >
+</datum>
+</message>
+<message type="7" code="26" title="Area estimation" ord="141" >
+<datum key="Hardware" value="" >
+<datum key="ALUs" value="0" >
+</datum>
+<datum key="Block memory bits" value="774184" >
+</datum>
+<datum key="Distributed memory bits" value="0" >
+</datum>
+<datum key="FFs" value="1320" >
+</datum>
+<datum key="LUTs" value="0" >
+</datum>
+<datum key="Logic tiles" value="0" >
+</datum>
+<datum key="NANDs" value="2060625" >
+</datum>
+<datum key="Other gates" value="0" >
+</datum>
+</datum>
+<datum key="Stage" value="After expansion" >
+</datum>
+</message>
+<message type="7" code="27" title="BlockCounts" ord="142" >
+<datum key="Blocks" value="" >
+<datum key="And" value="40756" >
+</datum>
+<datum key="Carry Buffer" value="1011" >
+</datum>
+<datum key="Carry Sum" value="7505" >
+</datum>
+<datum key="Flip-flop" value="1320" >
+</datum>
+<datum key="Input Buffer" value="3" >
+</datum>
+<datum key="Input Pad" value="3" >
+</datum>
+<datum key="Interface" value="3" >
+</datum>
+<datum key="LUT" value="16025" >
+</datum>
+<datum key="Memory - RAM" value="1" >
+</datum>
+<datum key="Memory - ROM" value="6" >
+</datum>
+<datum key="Not" value="138977" >
+</datum>
+<datum key="Or" value="2165" >
+</datum>
+<datum key="Output Buffer" value="29" >
+</datum>
+<datum key="Output Pad" value="29" >
+</datum>
+<datum key="Xor" value="756" >
+</datum>
+<datum key="[Other]" value="6147" >
+</datum>
+</datum>
+<datum key="Stage" value="After expansion" >
+</datum>
+</message>
+</section>
+<section title="Technology Mapping" ord="149" >
+<message type="7" code="26" title="Area estimation" ord="150" >
+<datum key="Hardware" value="" >
+<datum key="ALUs" value="0" >
+</datum>
+<datum key="Block memory bits" value="774184" >
+</datum>
+<datum key="Distributed memory bits" value="0" >
+</datum>
+<datum key="FFs" value="1264" >
+</datum>
+<datum key="LUTs" value="19313" >
+</datum>
+<datum key="Logic tiles" value="0" >
+</datum>
+<datum key="NANDs" value="0" >
+</datum>
+<datum key="Other gates" value="0" >
+</datum>
+</datum>
+<datum key="Stage" value="After mapping" >
+</datum>
+</message>
+<message type="7" code="27" title="BlockCounts" ord="151" >
+<datum key="Blocks" value="" >
+<datum key="Altera LCell" value="1011" >
+</datum>
+<datum key="Flip-flop" value="1264" >
+</datum>
+<datum key="Input Buffer" value="3" >
+</datum>
+<datum key="Input Pad" value="3" >
+</datum>
+<datum key="Interface" value="3" >
+</datum>
+<datum key="LUT" value="18302" >
+</datum>
+<datum key="Memory - RAM" value="1" >
+</datum>
+<datum key="Memory - ROM" value="6" >
+</datum>
+<datum key="Not" value="1" >
+</datum>
+<datum key="Output Buffer" value="29" >
+</datum>
+<datum key="Output Pad" value="29" >
+</datum>
+<datum key="[Other]" value="1" >
+</datum>
+</datum>
+<datum key="Stage" value="After mapping" >
+</datum>
+</message>
+</section>
+<section title="Retiming" ord="152" >
+<message type="5" code="129" title="Retiming requires that a valid part be specified" ord="153" >
+<datum key="" value="" >
+</datum>
+</message>
+</section>
+<message type="7" code="18" title="Constant divide" ord="83" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="93" start-column="17" end-line="93" end-column="40" context="macro proc 'displayC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="45" start-column="55" end-line="45" end-column="67" />
+</stack>
+<datum key="constant" value="6" >
+</datum>
+<datum key="width" value="7" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="84" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="93" start-column="17" end-line="93" end-column="40" context="macro proc 'displayC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="45" start-column="55" end-line="45" end-column="67" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="85" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="92" start-column="17" end-line="92" end-column="41" context="macro proc 'displayC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="45" start-column="55" end-line="45" end-column="67" />
+</stack>
+<datum key="constant" value="6" >
+</datum>
+<datum key="width" value="7" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="86" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="92" start-column="17" end-line="92" end-column="41" context="macro proc 'displayC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="45" start-column="55" end-line="45" end-column="67" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="87" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="91" start-column="17" end-line="91" end-column="38" context="macro proc 'displayC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="45" start-column="55" end-line="45" end-column="67" />
+</stack>
+<datum key="constant" value="6" >
+</datum>
+<datum key="width" value="7" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="88" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="91" start-column="17" end-line="91" end-column="38" context="macro proc 'displayC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="45" start-column="55" end-line="45" end-column="67" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="89" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="90" start-column="17" end-line="90" end-column="39" context="macro proc 'displayC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="45" start-column="55" end-line="45" end-column="67" />
+</stack>
+<datum key="constant" value="6" >
+</datum>
+<datum key="width" value="7" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="90" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="90" start-column="17" end-line="90" end-column="39" context="macro proc 'displayC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="45" start-column="55" end-line="45" end-column="67" />
+</stack>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="91" >
+<datum key="name" value="lcd_x" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\LCD.hch" start-line="3" start-column="24" end-line="3" end-column="25" />
+</stack>
+<datum key="detail" value="Simple signal removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="92" >
+<datum key="name" value="lcd_y" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\LCD.hch" start-line="3" start-column="27" end-line="3" end-column="28" />
+</stack>
+<datum key="detail" value="Simple signal removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="93" >
+<datum key="name" value="lcd_hblank" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\LCD.hch" start-line="4" start-column="23" end-line="4" end-column="29" />
+</stack>
+<datum key="detail" value="Simple signal removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="94" >
+<datum key="name" value="lcd_vblank" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\LCD.hch" start-line="4" start-column="31" end-line="4" end-column="37" />
+</stack>
+<datum key="detail" value="Simple signal removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="95" >
+<datum key="name" value="keyboard_up_2" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Keyboard.hch" start-line="5" start-column="16" end-line="5" end-column="21" />
+</stack>
+<datum key="detail" value="Constant register removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="96" >
+<datum key="name" value="keyboard_up_3" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Keyboard.hch" start-line="5" start-column="16" end-line="5" end-column="21" />
+</stack>
+<datum key="detail" value="Constant register removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="97" >
+<datum key="name" value="keyboard_down_2" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Keyboard.hch" start-line="5" start-column="23" end-line="5" end-column="30" />
+</stack>
+<datum key="detail" value="Constant register removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="98" >
+<datum key="name" value="keyboard_down_3" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Keyboard.hch" start-line="5" start-column="23" end-line="5" end-column="30" />
+</stack>
+<datum key="detail" value="Constant register removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="99" >
+<datum key="name" value="keyboard_left_2" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Keyboard.hch" start-line="5" start-column="32" end-line="5" end-column="39" />
+</stack>
+<datum key="detail" value="Constant register removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="100" >
+<datum key="name" value="keyboard_left_3" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Keyboard.hch" start-line="5" start-column="32" end-line="5" end-column="39" />
+</stack>
+<datum key="detail" value="Constant register removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="101" >
+<datum key="name" value="keyboard_right_2" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Keyboard.hch" start-line="5" start-column="41" end-line="5" end-column="49" />
+</stack>
+<datum key="detail" value="Constant register removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="1" title="Symbol" ord="102" >
+<datum key="name" value="keyboard_right_3" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Keyboard.hch" start-line="5" start-column="41" end-line="5" end-column="49" />
+</stack>
+<datum key="detail" value="Constant register removed" >
+</datum>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="103" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="133" start-column="14" end-line="133" end-column="26" />
+</stack>
+<datum key="constant" value="6" >
+</datum>
+<datum key="width" value="7" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="104" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="133" start-column="14" end-line="133" end-column="26" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="105" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="143" start-column="5" end-line="143" end-column="18" />
+</stack>
+<datum key="constant" value="64" >
+</datum>
+<datum key="width" value="18" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="106" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="143" start-column="5" end-line="143" end-column="18" />
+</stack>
+</datum>
+</message>
+<message type="7" code="20" title="Removed divide by 1" ord="107" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="143" start-column="5" end-line="143" end-column="18" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="108" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="148" start-column="5" end-line="148" end-column="18" />
+</stack>
+<datum key="constant" value="64" >
+</datum>
+<datum key="width" value="18" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="109" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="148" start-column="5" end-line="148" end-column="18" />
+</stack>
+</datum>
+</message>
+<message type="7" code="20" title="Removed divide by 1" ord="110" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="148" start-column="5" end-line="148" end-column="18" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="111" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="225" start-column="16" end-line="225" end-column="28" />
+</stack>
+<datum key="constant" value="6" >
+</datum>
+<datum key="width" value="7" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="112" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="205" start-column="13" end-line="205" end-column="61" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="225" start-column="16" end-line="225" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="113" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="133" start-column="14" end-line="133" end-column="26" />
+</stack>
+<datum key="constant" value="6" >
+</datum>
+<datum key="width" value="7" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="114" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="133" start-column="14" end-line="133" end-column="26" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="115" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="143" start-column="5" end-line="143" end-column="18" />
+</stack>
+<datum key="constant" value="64" >
+</datum>
+<datum key="width" value="18" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="116" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="143" start-column="5" end-line="143" end-column="18" />
+</stack>
+</datum>
+</message>
+<message type="7" code="20" title="Removed divide by 1" ord="117" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="143" start-column="5" end-line="143" end-column="18" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="118" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="148" start-column="5" end-line="148" end-column="18" />
+</stack>
+<datum key="constant" value="64" >
+</datum>
+<datum key="width" value="18" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="119" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="148" start-column="5" end-line="148" end-column="18" />
+</stack>
+</datum>
+</message>
+<message type="7" code="20" title="Removed divide by 1" ord="120" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="148" start-column="5" end-line="148" end-column="18" />
+</stack>
+</datum>
+</message>
+<message type="7" code="18" title="Constant divide" ord="121" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="225" start-column="16" end-line="225" end-column="28" />
+</stack>
+<datum key="constant" value="6" >
+</datum>
+<datum key="width" value="7" >
+</datum>
+</datum>
+</message>
+<message type="7" code="22" title="Factored shifts from divider" ord="122" >
+<datum key="operator" value="" >
+<stack>
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Demo.hcc" start-line="206" start-column="13" end-line="206" end-column="59" context="macro proc 'updateC'" />
+<position file-path="H:\Advanced Computer Systems Engineering\DonB\HandleC\Video\Car.hcc" start-line="225" start-column="16" end-line="225" end-column="28" />
+</stack>
+</datum>
+</message>
+<message type="5" code="125" title="Specified part name 'EP4CE115F29C7' not found in AlteraCycloneIII device family" ord="128" >
+<datum key="" value="" >
+</datum>
+</message>
+</section>
+<section title="Memory Pipelining" ord="148" >
+</section>
+<section title="Estimation" ord="154" >
+<message type="5" code="152" title="No valid part specified - generating logic-level based delay estimation" ord="155" >
+<datum key="" value="" >
+</datum>
+</message>
+</section>
+<message type="7" code="4" title="Error status" ord="156" >
+<datum key="Errors" value="0" >
+</datum>
+<datum key="Warnings" value="3" >
+</datum>
+</message>
+</section>
+<message type="7" code="7" title="Internal Timers" ord="157" >
+<datum key="0" value="" auto="1" >
+<datum key="Overall" value="416s (still running), started 1 times" >
+</datum>
+</datum>
+<datum key="1" value="" auto="1" >
+<datum key="Compilation to netlist" value="3s, started 1 times" >
+</datum>
+</datum>
+<datum key="10" value="" auto="1" >
+<datum key="Braindamaged retime" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="11" value="" auto="1" >
+<datum key="Pre-expansion" value="1s, started 1 times" >
+</datum>
+</datum>
+<datum key="12" value="" auto="1" >
+<datum key="Expansion" value="1s, started 1 times" >
+</datum>
+</datum>
+<datum key="13" value="" auto="1" >
+<datum key="Post-expansion" value="1s, started 1 times" >
+</datum>
+</datum>
+<datum key="14" value="" auto="1" >
+<datum key="Memory pipelining" value="0s, started 2 times" >
+</datum>
+</datum>
+<datum key="15" value="" auto="1" >
+<datum key="ALU mapper" value="0s, started 2 times" >
+</datum>
+</datum>
+<datum key="16" value="" auto="1" >
+<datum key="Pin merging" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="17" value="" auto="1" >
+<datum key="Selected backend" value="12s, started 1 times" >
+</datum>
+</datum>
+<datum key="18" value="" auto="1" >
+<datum key="Topsorter and countpaths" value="24s, started 127 times" >
+</datum>
+</datum>
+<datum key="19" value="" auto="1" >
+<datum key="Topsorter" value="1s, started 127 times" >
+</datum>
+</datum>
+<datum key="2" value="" auto="1" >
+<datum key="Complete hardware flow" value="397s, started 1 times" >
+</datum>
+</datum>
+<datum key="20" value="" auto="1" >
+<datum key="Breaking combinational cycles" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="21" value="" auto="1" >
+<datum key="Combinational dependencies" value="0s, started 60027 times" >
+</datum>
+</datum>
+<datum key="22" value="" auto="1" >
+<datum key="Inputs with path to" value="1s, started 60027 times" >
+</datum>
+</datum>
+<datum key="23" value="" auto="1" >
+<datum key="Health checks" value="11s, started 14 times" >
+</datum>
+</datum>
+<datum key="24" value="" auto="1" >
+<datum key="Upper bound on time unnecessarly spent clearing counts in OptTidy" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="25" value="" auto="1" >
+<datum key="Reading files" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="26" value="" auto="1" >
+<datum key="AST transformations" value="1s, started 1 times" >
+</datum>
+</datum>
+<datum key="27" value="" auto="1" >
+<datum key="Clock merging" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="28" value="" auto="1" >
+<datum key="Memory flattening" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="29" value="" auto="1" >
+<datum key="Memory balancing" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="3" value="" auto="1" >
+<datum key="Optimiser CSE" value="12s, started 32 times" >
+</datum>
+</datum>
+<datum key="30" value="" auto="1" >
+<datum key="Always patterns" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="31" value="" auto="1" >
+<datum key="EDIF Populate" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="32" value="" auto="1" >
+<datum key="EDIF Main processing" value="6s, started 1 times" >
+</datum>
+</datum>
+<datum key="33" value="" auto="1" >
+<datum key="EDIF Remaining tasks" value="5s, started 1 times" >
+</datum>
+</datum>
+<datum key="34" value="" auto="1" >
+<datum key="Checking pads to FFs" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="35" value="" auto="1" >
+<datum key="MergeRegInputs" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="36" value="" auto="1" >
+<datum key="PostMap" value="0s, started 1 times" >
+</datum>
+</datum>
+<datum key="37" value="" auto="1" >
+<datum key="BuildInOutWiresToTop" value="0s, started 3 times" >
+</datum>
+</datum>
+<datum key="38" value="" auto="1" >
+<datum key="SRL Packing" value="0s, started 0 times" >
+</datum>
+</datum>
+<datum key="39" value="" auto="1" >
+<datum key="Constant propagation" value="6s, started 3 times" >
+</datum>
+</datum>
+<datum key="4" value="" auto="1" >
+<datum key="Rewriting" value="10s, started 40 times" >
+</datum>
+</datum>
+<datum key="5" value="" auto="1" >
+<datum key="Conditional rewriting" value="343s, started 28 times" >
+</datum>
+</datum>
+<datum key="6" value="" auto="1" >
+<datum key="Tidying" value="1s, started 58 times" >
+</datum>
+</datum>
+<datum key="7" value="" auto="1" >
+<datum key="Technology mapping" value="12s, started 1 times" >
+</datum>
+</datum>
+<datum key="8" value="" auto="1" >
+<datum key="Retiming" value="1s, started 1 times" >
+</datum>
+</datum>
+<datum key="9" value="" auto="1" >
+<datum key="Tree balancing" value="1s, started 1 times" >
+</datum>
+</datum>
+</message>
+</report>

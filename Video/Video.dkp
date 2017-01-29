@@ -1,0 +1,22 @@
+<celdev_project type="Handel-C Chip" >
+ <configuration base="Debug" name="Debug" />
+ <configuration base="EDIF" name="EDIF" >
+  <setting name="LibraryModule" >stdlib.hcl</setting>
+ </configuration>
+ <configuration base="Release" name="Release" />
+ <configuration base="VHDL" name="VHDL" />
+ <configuration base="Verilog" name="Verilog" />
+ <document type="hcc" name="Demo.hcc" />
+ <document type="hch" name="LCD.hch" />
+ <document type="hcc" name="LCD.hcc" />
+ <document type="hcc" name="Keyboard.hcc" />
+ <document type="hch" name="Keyboard.hch" />
+ <document type="hch" name="Sprites.hch" />
+ <document type="hcc" name="Sprites.hcc" />
+ <document type="hcc" name="Car.hcc" />
+ <document type="hcc" name="Track.hcc" />
+ <document type="hch" name="Track.hch" />
+ <document type="hch" name="Car.hch" />
+ <document type="hcc" name="Digit.hcc" />
+ <document type="hch" name="Digit.hch" />
+</celdev_project>

@@ -1,0 +1,17 @@
+#include <stdlib.hch>
+#include "Sprites.hch"
+
+typedef struct
+{
+    unsigned 8  color;   // Current decoded colour
+    unsigned 8  counter; // number of pixels left of current colour
+    unsigned 8  pixel;
+    unsigned 13 index;
+} Track;
+
+unsigned 4 laps;
+
+macro proc displayT(disp, data);
+macro proc initialiseT(data);
+macro proc collisions(data);
+macro proc clearSkids();

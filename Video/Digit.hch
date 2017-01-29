@@ -1,0 +1,14 @@
+#include <stdlib.hch>
+#include "Sprites.hch"
+
+typedef struct {
+    unsigned 10 x, y; // Digit position
+    unsigned 8 pixel;
+    unsigned 1 b_h, b_v; // In ball bitmap?
+    unsigned 4 b_x, b_y; // Index into bitmap
+    unsigned 2 digitNum;
+    unsigned 4 countNum;
+} Digit;
+
+macro proc initialiseD( data ); // Sets initial position and speed
+macro proc displayD( disp, data ); // Displays the ball

@@ -1,0 +1,55 @@
+#include "LCD.hch"
+
+macro proc lcd_driver( lcd )
+{
+    unsigned 24 colour;
+    unsigned 1 hsync, vsync, blankn;
+    interface bus_out() tpad_RGB( unsigned 24 clr = colour ) with // Colour interface
+    {
+        data = {"H10","H8", "J12","G10","F12","D10","E11","E12",
+                "C9", "F10","B8", "C8", "H12","F8", "G11","G8",
+                "D12","D11","C12","A11","B11","C11","A10","B10"},
+        standard = "LVCMOS25"
+    };
+    
+    // LCD control interface
+    interface bus_out() tpad_control( unsigned 5 ctrl = (!__clock) @ hsync @ vsync @ blankn @ 0) with
+    {
+        data = {"A12",  // Clock signal
+                "G13",  // H_SYNC
+                "C13",
+                "F11",
+                "C10"}, // V_SYNC
+        standard = "LVCMOS25"
+    };
+
+    /*
+    ENTITY vga IS
+		PORT(
+            pixel_clk	:	IN	STD_LOGIC;	-- 40Mhz
+            h_sync		:	OUT	STD_LOGIC;	-- Sync output
+            v_sync		:	OUT	STD_LOGIC;
+            column		:	OUT	INTEGER;	-- X coordinate
+            row			:	OUT	INTEGER;	-- Y coordinate
+            n_blank		:	OUT	STD_LOGIC;	-- Direct blacking output to DAC
+            h_blank     :  	OUT  STD_LOGIC; -- h and v blanking 
+            v_blank     :  	OUT  STD_LOGIC);
+    END vga;
+    */
+
+
+    // interface to VHDL
+    interface vga (unsigned 10 column, unsigned 10 row, unsigned 1 n_blank, unsigned 1 v_sync, unsigned 1 h_sync, unsigned 1 h_blank, unsigned 1 v_blank) tpad_lcd( unsigned 1 pixel_clk = __clock ) with {busformat = "B[I]"}; 
+    
+     do par { // Set all inputs
+        colour = lcd.r @ lcd.g @ lcd.b; // Synchronise LCD output signals
+        hsync = tpad_lcd.h_sync;
+        vsync = tpad_lcd.v_sync;
+        blankn = tpad_lcd.n_blank;
+        lcd.x = tpad_lcd.column;
+        lcd.y = tpad_lcd.row;
+        lcd.hblank = !tpad_lcd.h_blank;
+        lcd.vblank = !tpad_lcd.v_blank;
+        
+    } while (1);
+}

@@ -1,0 +1,24 @@
+#include <stdlib.hch>
+#include "Sprites.hch"
+
+typedef struct {
+    unsigned 18 x, y; // Car position
+    signed 18 vx, vy, v, maxV, finalVX, finalVY;     // Car velocity
+    unsigned 8 pixel;
+    unsigned 1 b_h, b_v; // In ball bitmap?
+    unsigned 4 b_x, b_y; // Index into bitmap
+    unsigned 2 playerNum;
+    unsigned 4 lapNum;
+    unsigned 7 angle;
+    signed 18 currProp, finalProp; //Variable proportion of X and Y velocities for updating
+    unsigned 1 grass, bollard; //indicator if on grass or bollard
+    int 6 accelRate, brakeRate, decelRate; //up button rate, down button rate, passive decelleration rate
+    unsigned 3 trackSector;
+} Car;
+
+macro proc initialiseC( data ); // Sets initial position and speed
+macro proc updateC( data, kbData, lapCounter, s ); // Updates ball position
+macro proc displayC( disp, data ); // Displays the ball
+rom signed sinTable[]; //for sin lookup table
+rom signed cosTable[]; //for cos lookup table
+unsigned 18 vvx, vvy;

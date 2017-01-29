@@ -1,0 +1,8 @@
+typedef struct
+{
+    unsigned 16 key;
+    unsigned 1  event;
+    unsigned 1 up[4], down[4], left[4], right[4], enter;
+} KBData;
+
+macro proc kbDriver(keyb);

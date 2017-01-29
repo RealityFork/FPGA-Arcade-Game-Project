@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Video">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Video|ALTSYNCRAM:SPROM_B25_Car_hcc_5_LPMROM_cosTable" CBX_FILE_NAME="altsyncram_6071.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Video|ALTSYNCRAM:SPROM_B718_Sprites_hcc_594_LPMROM_DigitSprites" CBX_FILE_NAME="altsyncram_b371.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Video|ALTSYNCRAM:SPROM_B785_Sprites_hcc_14_LPMROM_CarSprites_1" CBX_FILE_NAME="altsyncram_l371.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Video|altshift_taps:B67_Digit_hch_5_DTYPE0IR_rtl_0" CBX_FILE_NAME="shift_taps_e6m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Video|ALTSYNCRAM:SPRAM_B683_Sprites_hcc_12_LPMRAM_Skids" CBX_FILE_NAME="altsyncram_g991.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Video|ALTSYNCRAM:SPROM_B732_Sprites_hcc_813_LPMROM_TrackSprite" CBX_FILE_NAME="altsyncram_3571.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Video|ALTSYNCRAM:SPROM_B758_Sprites_hcc_14_LPMROM_CarSprites_0" CBX_FILE_NAME="altsyncram_k371.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Video|altpll:B3_Demo_hcc_12_pll" CBX_FILE_NAME="pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Video|ALTSYNCRAM:SPROM_B14_Car_hcc_4_LPMROM_sinTable" CBX_FILE_NAME="altsyncram_5071.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

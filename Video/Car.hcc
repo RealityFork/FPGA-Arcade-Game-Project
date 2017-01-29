@@ -1,0 +1,266 @@
+#include "Car.hch"
+    
+//trig lookup tables
+rom int 18 sinTable[16] = {0, 3, 6, 7, 8, 7, 6, 3, 0, -3, -6, -7, -8, -7, -6, -3};
+rom int 18 cosTable[16] = {8, 7, 6, 3, 0, -3, -6, -7, -8, -7, -6, -3, 0, 3, 6, 7};
+unsigned 18 vvx, vvy;
+unsigned 4 ang;
+signed 18 diffX, diffY;
+    
+macro proc displayC( disp, data ) 
+{
+    par 
+    {
+        if (disp.x == adju((data.x>>8), 10)) // Start of horizontal bitmap
+            par 
+            { 
+                data.b_h = 1; // We are in the bitmap
+                data.b_x = 0; // Set x index to 0
+            }
+            else if (data.b_h) // We are in the bitmap
+                par 
+                { 
+                    data.b_x++; // Increment index
+                    if (data.b_x == 15) 
+                        data.b_h = 0; // End horizontal position
+                    else delay;
+                }
+            else delay;
+        if (disp.y == adju((data.y>>8), 10)) // Start of vertical bitmap position
+            par 
+            { 
+                data.b_v = 1;
+                data.b_y = 0;
+            }
+        else if (data.b_v && disp.x == 0) // Start of a row in bitmap
+            par 
+            { 
+                data.b_y++; // Index for next row
+                if (data.b_y == 15) 
+                    data.b_v = 0; // End vertical bitmap
+                else delay;
+            }
+        else delay;
+        if (data.b_h && data.b_v) // Within ball bitmap?
+            data.pixel = CarSprites[data.playerNum][((data.angle/6)<-4)@data.b_y@data.b_x];
+        else
+            data.pixel = C_TRANSPARENT;
+    }
+}
+
+macro proc initialiseC(data) 
+{
+    par {
+        data.x = 125952; // Initial position (1,1)
+        if (data.playerNum == 0)
+            data.y = 122880;
+        else if (data.playerNum == 1)
+            data.y = 134400;
+        data.vx = 0; // Initial velocity (0,0,0)
+        data.vy = 0;
+        data.v = 0; 
+        data.angle = 48; //Initial angle, positive x direction = 0 degrees, anticlockwise postive
+        data.accelRate = 5;
+        data.brakeRate = 10;
+        data.maxV = 200; 
+        data.finalVX = 0;
+        data.finalVY = 0;
+        data.currProp = 126;
+        data.finalProp = 2;
+        data.lapNum = 0;
+        data.trackSector = 5;
+    }
+}
+
+macro proc updateC(data, kbData, lapCounter, s) 
+{
+    unsigned 4 index;
+    signed 18 temp1, temp2;
+    signed 25 huge, huge2;
+    par {
+        if (s == 1)
+        {
+            if (kbData.up[data.playerNum] && data.v < data.maxV) //Accelerating
+            {
+                data.v += ((signed)(adju(data.accelRate, 18)));
+                if (data.v > data.maxV)
+                    data.v = data.maxV;
+            }
+            else if (kbData.down[data.playerNum] && data.v > 0) //Braking
+            {
+                data.v -= ((signed)(adju(data.brakeRate, 18)));
+                if (data.v < 0)
+                    data.v = 0;
+            }
+            else if (data.v != 0) //Passively slowing down
+            {
+                data.v -= ((signed)(adju(data.decelRate, 18)));
+                if (data.v < 0)
+                    data.v = 0;
+            }
+            // Turn anticlockwise
+            if (kbData.left[data.playerNum])
+            {
+                if (data.v != 0)
+                {
+                    if (data.angle == 0)
+                        data.angle = 95;
+                    else
+                        data.angle--;
+                }
+            }
+            // Turn clockwise
+            else if (kbData.right[data.playerNum])
+            {
+                if (data.v != 0)
+                {
+                    if (data.angle == 95)
+                        data.angle = 0;
+                    else
+                        data.angle++;
+                }
+            }
+        }
+        else if (data.v != 0) //Passively slowing down when game finished
+        {
+            data.v -= ((signed)(adju(data.decelRate, 18)));
+            if (data.v < 0)
+                data.v = 0;
+        }
+        
+    } 
+    
+    // Final is the x and y velocity if all velocity was at angle.
+    index = (data.angle/6)<-4;
+    
+    //Maths expanded out into many temporary variables due to timing constraints
+    //Calculate expected final velocities based on angle of car and current velocity
+    temp1 = cosTable[index];
+    temp2 = sinTable[index];
+    data.finalVX = data.v*temp1; 
+    data.finalVY = data.v*temp2;
+
+    //Calculate actual velocities proportionaly in respect to current x and y velocities
+    //and expected final x and y velocities
+    temp1 = data.currProp*data.vx;
+    temp2 = data.finalProp*data.finalVX;
+    data.vx = temp1+temp2;
+    data.vx /= 64;
+    
+    temp1 = data.currProp*data.vy;
+    temp2 = data.finalProp*data.finalVY;
+    data.vy = temp1+temp2;
+    data.vy /= 64;
+
+    //Calculate new position based on relevant velocities
+    data.x = (unsigned)((signed)data.x + data.vx);
+    data.y = (unsigned)((signed)data.y + data.vy);
+    par {
+        if (data.x > 240000) // Hax
+            data.x = 256;
+        else if (data.x > 200704)
+            data.x = 200704;
+        if (data.y > 240000)
+            data.y = 256;
+        else if (data.y > 149504)
+            data.y = 149504;
+    }
+    
+    //This section is a state machine for ensuring check points have been passed, in order to complete lap
+    par {
+        // Check sectors
+        if (data.trackSector == 0)
+        {
+            if (data.x < 51200 && data.y > 102400 && data.y < 112640)
+                data.trackSector++;
+        }
+        else if (data.trackSector == 1)
+        {
+            if (data.x < 51200 && data.y > 40960 && data.y < 51200)
+                data.trackSector++;
+        }
+        else if (data.trackSector == 2)
+        {
+            if (data.x > 161280 && data.y > 40960 && data.y < 51200)
+                data.trackSector++;
+        }
+        else if (data.trackSector == 3)
+        {
+            if (data.x > 64000 && data.x < 133120 && data.y > 76800 && data.y < 84480)
+                data.trackSector++;
+        }
+        else if (data.trackSector == 4)
+        {
+            if (data.x > 161280 && data.y > 112640 && data.y < 117760)
+                data.trackSector++;
+        }
+        else if (data.trackSector == 5)
+        {
+            if (data.x > 122880 && data.x < 125440 && data.y > 112640 && data.y < 153344)//Lap complete, increase lap counter
+            {
+                data.trackSector = 0;
+                data.lapNum++;
+                lapCounter.countNum = data.lapNum;
+            }
+        }
+    }
+    
+    // Draw skids
+    huge  = adjs(data.vx, 25)*adjs(data.vx, 25);
+    huge2 = adjs(data.vy, 25)*adjs(data.vy, 25);
+    huge += huge2;
+    par {
+        huge  = (adjs(cosTable[index], 25)*huge)>>3;
+        huge2 = (adjs(sinTable[index], 25)*huge)>>3;
+    }
+    
+    //Find the difference between expected X and Y and actual X and Y velocities, to check if sliding, thus skids
+    if (huge > adjs(data.vx, 25)*adjs(data.vx, 25))
+        diffX = adjs(huge - adjs(data.vx, 25)*adjs(data.vx, 25), 18);
+    else
+        diffX = adjs(adjs(data.vx, 25)*adjs(data.vx, 25) - huge, 18);
+    if (huge2 > adjs(data.vy, 25)*adjs(data.vy, 25))
+        diffY = adjs(huge2 - adjs(data.vy, 25)*adjs(data.vy, 25), 18);
+    else
+        diffY = adjs(adjs(data.vy, 25)*adjs(data.vy, 25) - huge2, 18);
+    
+    
+    // Draw skid marks
+    if (diffX > 70000 || diffX < -70000 || diffY  > 70000 || diffY < -70000)
+    {
+        ang = (data.angle/6)<-4;
+        if (ang <=2 || ang == 15 || (ang > 7 && ang < 11)) // Left or right ish
+        {
+            Skids[((data.y>>8)<-10)+4@((data.x>>8)<-10)+7] = 1;
+            Skids[((data.y>>8)<-10)+4@((data.x>>8)<-10)+8] = 1;
+            Skids[((data.y>>8)<-10)+4@((data.x>>8)<-10)+9] = 1;
+            Skids[((data.y>>8)<-10)+5@((data.x>>8)<-10)+7] = 1;
+            Skids[((data.y>>8)<-10)+5@((data.x>>8)<-10)+8] = 1;
+            Skids[((data.y>>8)<-10)+5@((data.x>>8)<-10)+9] = 1;
+            
+            Skids[((data.y>>8)<-10)+10@((data.x>>8)<-10)+7] = 1;
+            Skids[((data.y>>8)<-10)+10@((data.x>>8)<-10)+8] = 1;
+            Skids[((data.y>>8)<-10)+10@((data.x>>8)<-10)+9] = 1;
+            Skids[((data.y>>8)<-10)+11@((data.x>>8)<-10)+7] = 1;
+            Skids[((data.y>>8)<-10)+11@((data.x>>8)<-10)+8] = 1;
+            Skids[((data.y>>8)<-10)+11@((data.x>>8)<-10)+9] = 1;
+        }
+        else // Up or down ish
+        {
+            Skids[((data.y>>8)<-10)+7@((data.x>>8)<-10)+4] = 1;
+            Skids[((data.y>>8)<-10)+8@((data.x>>8)<-10)+4] = 1;
+            Skids[((data.y>>8)<-10)+9@((data.x>>8)<-10)+4] = 1;
+            Skids[((data.y>>8)<-10)+7@((data.x>>8)<-10)+5] = 1;
+            Skids[((data.y>>8)<-10)+8@((data.x>>8)<-10)+5] = 1;
+            Skids[((data.y>>8)<-10)+9@((data.x>>8)<-10)+5] = 1;
+            
+            Skids[((data.y>>8)<-10)+7@((data.x>>8)<-10)+10] = 1;
+            Skids[((data.y>>8)<-10)+8@((data.x>>8)<-10)+10] = 1;
+            Skids[((data.y>>8)<-10)+9@((data.x>>8)<-10)+10] = 1;
+            Skids[((data.y>>8)<-10)+7@((data.x>>8)<-10)+11] = 1;
+            Skids[((data.y>>8)<-10)+8@((data.x>>8)<-10)+11] = 1;
+            Skids[((data.y>>8)<-10)+9@((data.x>>8)<-10)+11] = 1;
+        }
+    }
+    
+}

@@ -1,0 +1,132 @@
+#include "Track.hch"
+
+
+macro proc displayT( disp, data )
+par {
+    if (disp.hblank)
+    par{
+        data.counter--;
+        data.pixel = data.color; // Set output as current colour
+        if (data.counter == 1)   // Time for a new color
+        par{
+            if (data.index == 5216) // Length of the track array-1
+                data.index = 0;
+            else
+                data.index++; // Increment index whilst setting new colour
+            data.counter = TrackSprite[data.index]<-8;
+            data.color = TrackSprite[data.index]\\8;
+        }
+    }
+    else data.pixel = 0;
+}
+macro proc initialiseT( data )
+par {
+    data.counter = TrackSprite[0]<-8; // First colour
+    data.color = TrackSprite[0]\\8;
+    data.index = 1; // This is actually the NEXT index, ready for use
+    data.pixel = 0;
+}
+
+macro proc collisions(data)
+{
+    // This was an attempt at proper circle-based collisions.
+    // It's left here since we worked on it for about 20 hours and it almost worked =(
+    
+    /*unsigned 3 i;
+    for (i=0; i < 5; i++)
+    {
+        signed 18 dx, dy; // Unit vector in direction of collision
+        signed 21 len, len2, len3;
+        signed 18 tempx, tempy, ttempx, ttempy, dot, newV, temp;
+        // Lots of steps to stay within timing requirements.
+        len   = ((signed)(00@data.x>>8)-bollards[i][0]);
+        len2  = ((signed)(00@data.x>>8)-bollards[i][0]);
+        len  *= len2;
+        len2  = ((signed)(00@data.y>>8)-bollards[i][1]);
+        len3  = ((signed)(00@data.y>>8)-bollards[i][1]);
+        len2 *= len3;
+        len  += len2;
+        
+        if ((bollardR+carR)*(bollardR+carR) > len) // Bounding circles colliding
+        {
+            // Vector maths biatch
+            
+            dx = (signed)(00@data.x>>8)-adjs(bollards[i][0], 18);
+            dy = (signed)(00@data.y>>8)-adjs(bollards[i][1], 18);
+            
+            par { // Make scale vector (vector length = 256)
+                dx = ((dx<<8)*(dx<<8));
+                dy = ((dy<<8)*(dy<<8));
+            }
+            par {
+                dx /= adjs(len, 18);
+                dy /= adjs(len, 18);
+            }
+            
+            //  v1 = u1 - d1*(dot(u1,d1))
+            
+            // Calculate the dot product of u1 and d1
+            tempx = data.vx*dx;
+            tempy = data.vy*dy; // temp use
+            dot = tempx + tempy;
+            
+            // finish calculating v1
+            tempx = dot*dx;
+            tempy = dot*dy;
+            ttempx = data.vx;
+            ttempy = data.vy;
+            ttempx -= tempx;
+            ttempy -= tempy;
+            
+            //data.vx = adjs(ttempx, 18);
+            //data.vy = adjs(ttempy, 18);
+            
+            // These are now just used as temp vars
+            // Scale to original V
+            dot = data.v*data.v;
+            dot *= ttempx;
+            temp = ttempx*ttempx;
+            newV = ttempy*ttempy;
+            newV += temp; // newV is now the total velocity denoted by tempx and tempy (squared)
+            data.vx = dot;///newV; // Divide by new vTotal
+            
+            // Now do Y
+            dot = data.v*data.v;
+            dot *= tempy;
+            data.vy = dot;///newV;
+        }
+    }*/
+    
+    // Adjust rates for different surfaces
+    if (data.bollard)
+    {
+        data.maxV = 50;
+        data.decelRate = 20;
+        data.v = 50;
+        data.currProp = 50;
+    }
+    else if (data.grass)
+    {
+        data.maxV = 100;
+        data.decelRate = 10;
+        data.accelRate = 2;
+        data.currProp = 63;
+        data.finalProp = 1;
+    }
+    else
+    {
+        data.maxV = 200;
+        data.decelRate = 4;
+        data.currProp = 62;
+        data.finalProp = 2;
+        data.accelRate = 5;
+    }
+}
+
+macro proc clearSkids()
+{
+    unsigned 20 i;
+    
+    for (i=0; i<=600024; i++)
+        Skids[i] = 0;
+}
